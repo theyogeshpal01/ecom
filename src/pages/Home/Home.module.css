@@ -1,0 +1,5 @@
+.homeContainer {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #faf9f6; /* Very light, aesthetic background */
+}
