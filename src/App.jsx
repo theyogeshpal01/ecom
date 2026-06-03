@@ -8,6 +8,7 @@ import Enquiry from './pages/Enquiry/Enquiry';
 import './index.css';
 
 import Login from './pages/Login/Login';
+import Shop from './pages/Shop/Shop';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/categories" element={<Shop />} />
+          <Route path="/categories/:categoryId" element={<Shop />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/product/:id/enquiry" element={<Enquiry />} />
           <Route path="/login" element={<Login />} />

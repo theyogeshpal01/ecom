@@ -17,7 +17,7 @@ const Header = () => {
       <header className={styles.headerTop}>
         {/* Top Bar */}
         <div className={styles.topBar}>
-          <p>Free Shipping World wide for all orders over $199 <a href="#">SHOP NOW</a></p>
+          <p>Free Shipping World wide for all orders over $199 <Link to="/shop">SHOP NOW</Link></p>
         </div>
 
         {/* Middle Bar */}

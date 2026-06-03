@@ -22,7 +22,7 @@ export const HEADER_LINKS = [
       { label: 'Luxury Clock', href: '/categories/clock', hasArrow: true },
     ]
   },
-  { label: 'PRODUCT', href: '/products' },
+  { label: 'PRODUCT', href: '/shop' },
   { 
     label: 'SERVICES', 
     href: '/services', 
