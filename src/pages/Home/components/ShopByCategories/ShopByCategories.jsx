@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ShopByCategories.module.css';
+import useScrollAnimation from '../../../../hooks/useScrollAnimation';
 
 const categories = [
   { id: 1, name: 'BLUE POTTERY', image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?q=80&w=500&auto=format&fit=crop' },
@@ -10,14 +11,16 @@ const categories = [
 ];
 
 const ShopByCategories = () => {
+  const headerRef = useScrollAnimation();
+  const gridRef = useScrollAnimation();
   return (
     <section className={styles.section}>
-      <div className={styles.header}>
+      <div className={styles.header} ref={headerRef} style={{opacity:0,transform:'translateY(30px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
         <h2 className={styles.title}>SHOP BY CATEGORIES</h2>
         <p className={styles.subtitle}>Explore our diverse range of authentic Indian handicrafts</p>
       </div>
 
-      <div className={styles.categoriesGrid}>
+      <div className={styles.categoriesGrid} ref={gridRef} style={{opacity:0,transform:'translateY(40px)',transition:'opacity 0.7s ease,transform 0.7s ease,transition-delay:0.15s'}}>
         {categories.map((category) => (
           <div key={category.id} className={styles.categoryItem}>
             <div className={styles.imageContainer}>

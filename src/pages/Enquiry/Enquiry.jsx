@@ -3,12 +3,16 @@ import { useParams, Link } from 'react-router-dom';
 import { products } from '../../data/products';
 import { ChevronRight, ArrowLeft } from 'lucide-react';
 import styles from './Enquiry.module.css';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const Enquiry = () => {
   const { id } = useParams();
   
   // Find the product
   const product = products.find(p => p.id === parseInt(id));
+
+  const headerRef = useScrollAnimation();
+  const formRef = useScrollAnimation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -45,7 +49,7 @@ const Enquiry = () => {
         </nav>
 
         <div className={styles.enquiryContainer}>
-          <div className={styles.header}>
+          <div className={styles.header} ref={headerRef} style={{opacity:0,transform:'translateY(30px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
             <Link to={`/product/${product.id}`} className={styles.backBtn}><ArrowLeft size={18} /> Back to Product</Link>
             <h1>Product Enquiry</h1>
             <p>Looking for a specialized quote? Fill out the form below and our team will get back to you with custom pricing and details.</p>
@@ -62,7 +66,7 @@ const Enquiry = () => {
             </div>
           </div>
 
-          <form className={styles.form} onSubmit={handleSubmit}>
+          <form className={styles.form} onSubmit={handleSubmit} ref={formRef} style={{opacity:0,transform:'translateY(40px)',transition:'opacity 0.7s ease,transform 0.7s ease,transition-delay:0.15s'}}>
             {/* Section 1: Personal Info */}
             <div className={styles.formSection}>
               <h2 className={styles.sectionTitle}>Personal Information</h2>

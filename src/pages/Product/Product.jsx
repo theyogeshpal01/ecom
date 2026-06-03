@@ -6,9 +6,12 @@ import ProductInfo from './components/ProductInfo/ProductInfo';
 import ProductDetailsTab from './components/ProductDetailsTab/ProductDetailsTab';
 import RelatedProducts from './components/RelatedProducts/RelatedProducts';
 import { products } from '../../data/products';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const Product = () => {
   const { id } = useParams();
+  const galleryRef = useScrollAnimation();
+  const infoRef = useScrollAnimation();
   
   // Scroll to top when the ID changes (like when clicking a related product)
   useEffect(() => {
@@ -36,12 +39,11 @@ const Product = () => {
         <div className={styles.container}>
           <div className={styles.grid}>
             {/* Left Column: Image Gallery */}
-            <div className={styles.galleryColumn}>
+            <div className={styles.galleryColumn} ref={galleryRef} style={{opacity:0,transform:'translateX(-40px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
               <ProductGallery product={product} />
             </div>
             
-            {/* Right Column: Product Details & Cart Actions */}
-            <div className={styles.infoColumn}>
+            <div className={styles.infoColumn} ref={infoRef} style={{opacity:0,transform:'translateX(40px)',transition:'opacity 0.7s ease,transform 0.7s ease,transition-delay:0.15s'}}>
               <ProductInfo product={product} />
             </div>
           </div>

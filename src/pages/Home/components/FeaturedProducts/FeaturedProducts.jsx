@@ -2,19 +2,21 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Layers, Maximize, Star } from 'lucide-react';
 import styles from './FeaturedProducts.module.css';
-
+import useScrollAnimation from '../../../../hooks/useScrollAnimation';
 import { products } from '../../../../data/products';
 
 const FeaturedProducts = () => {
+  const headerRef = useScrollAnimation();
+  const gridRef = useScrollAnimation();
   return (
     <section className={styles.section}>
-      <div className={styles.header}>
+      <div className={styles.header} ref={headerRef} style={{opacity:0,transform:'translateY(30px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
         <h2 className={styles.title}>FEATURED PRODUCTS</h2>
         <p className={styles.subtitle}>Discover authentic Indian artistry crafted by skilled artisans</p>
       </div>
 
-      <div className={styles.grid}>
-        {products.map((product) => (
+      <div className={styles.grid} ref={gridRef} style={{opacity:0,transform:'translateY(40px)',transition:'opacity 0.7s ease,transform 0.7s ease,transition-delay:0.15s'}}>
+        {products.slice(0, 4).map((product) => (
           <div key={product.id} className={styles.card}>
             
             <div className={styles.imageArea}>

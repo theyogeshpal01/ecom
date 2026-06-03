@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
 import styles from './FAQ.module.css';
+import useScrollAnimation from '../../../../hooks/useScrollAnimation';
 
 const faqs = [
   { id: 1, question: 'Company Overview', answer: 'We are a leading exporter of authentic Indian handicrafts, dedicated to preserving traditional artistry while meeting global quality standards.' },
@@ -15,6 +16,8 @@ const faqs = [
 
 const FAQ = () => {
   const [openId, setOpenId] = useState(null);
+  const headerRef = useScrollAnimation();
+  const gridRef = useScrollAnimation();
 
   const toggleFaq = (id) => {
     setOpenId(openId === id ? null : id);
@@ -23,7 +26,7 @@ const FAQ = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.header}>
+        <div className={styles.header} ref={headerRef} style={{opacity:0,transform:'translateY(30px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
           <h2 className={styles.title}>FREQUENTLY ASKED QUESTIONS</h2>
           <p className={styles.subtitle}>Find answers to common questions about our products and services</p>
         </div>
@@ -33,7 +36,7 @@ const FAQ = () => {
           <div className={styles.underline}></div>
         </div>
 
-        <div className={styles.grid}>
+        <div className={styles.grid} ref={gridRef} style={{opacity:0,transform:'translateY(40px)',transition:'opacity 0.7s ease,transform 0.7s ease,transition-delay:0.15s'}}>
           {faqs.map((faq) => (
             <div 
               key={faq.id} 

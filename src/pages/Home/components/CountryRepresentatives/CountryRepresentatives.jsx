@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import styles from './CountryRepresentatives.module.css';
+import useScrollAnimation from '../../../../hooks/useScrollAnimation';
 
 const representatives = [
   {
@@ -28,6 +29,8 @@ const representatives = [
 
 const CountryRepresentatives = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const headerRef = useScrollAnimation();
+  const sliderRef = useScrollAnimation();
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === representatives.length - 1 ? 0 : prevIndex + 1));
@@ -41,12 +44,12 @@ const CountryRepresentatives = () => {
 
   return (
     <section className={styles.section}>
-      <div className={styles.header}>
+      <div className={styles.header} ref={headerRef} style={{opacity:0,transform:'translateY(30px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
         <h2 className={styles.title}>COUNTRY REPRESENTATIVE</h2>
         <p className={styles.subtitle}>Building Trust Across Borders</p>
       </div>
 
-      <div className={styles.sliderContainer}>
+      <div className={styles.sliderContainer} ref={sliderRef} style={{opacity:0,transform:'translateY(40px)',transition:'opacity 0.7s ease,transform 0.7s ease,transition-delay:0.15s'}}>
         <button className={`${styles.navBtn} ${styles.prevBtn}`} onClick={prevSlide} aria-label="Previous">
           <ChevronLeft size={24} />
         </button>

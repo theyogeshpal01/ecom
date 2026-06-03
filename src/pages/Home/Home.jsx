@@ -4,7 +4,8 @@ import ShopByCategories from './components/ShopByCategories/ShopByCategories';
 import FeaturedProducts from './components/FeaturedProducts/FeaturedProducts';
 import SplitInfoSection from './components/SplitInfoSection/SplitInfoSection';
 import HighlightGrid from './components/HighlightGrid/HighlightGrid';
-import FeaturesRow from './components/FeaturesRow/FeaturesRow';
+import ProductCatalogue from './components/ProductCatalogue/ProductCatalogue';
+import AboutCTASection from './components/AboutCTASection/AboutCTASection';
 import FilterBar from './components/FilterBar/FilterBar';
 import MeetOurArtisans from './components/MeetOurArtisans/MeetOurArtisans';
 import CountryRepresentatives from './components/CountryRepresentatives/CountryRepresentatives';
@@ -20,7 +21,7 @@ const Home = () => {
       <HeroSlider />
       
       <FilterBar />
-      <FeaturesRow />
+      <AboutCTASection />
 
       <ShopByCategories />
       <FeaturedProducts />
@@ -41,6 +42,9 @@ const Home = () => {
       
       {/* Our Commitment using the Highlight Grid layout */}
       <HighlightGrid />
+      
+      {/* Product Catalogue Section */}
+      <ProductCatalogue />
       
       <MeetOurArtisans />
       <CountryRepresentatives />

@@ -1,68 +1,79 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import styles from './HeroSlider.module.css';
 
 const slides = [
   {
     id: 1,
-    subtitle: 'Handcrafted Products, Inspired By India',
-    title: 'WELCOME TO HIEIL',
+    eyebrow: 'Welcome to HIEIL (OPC) Pvt. Ltd.',
+    title: 'Handcrafted Products,\nInspired By India',
     image: '/carousel1.png',
   },
   {
     id: 2,
-    subtitle: 'Authentic Indian Craftsmanship',
-    title: 'PREMIUM HANDICRAFTS',
+    eyebrow: 'Authentic Indian Craftsmanship',
+    title: 'Premium Handicrafts\nFor Global Markets',
     image: '/carousel2.png',
   },
   {
     id: 3,
-    subtitle: 'Sustainable & Ethical Practices',
-    title: 'GLOBAL EXPORT',
+    eyebrow: 'Sustainable & Ethical Practices',
+    title: 'Timeless Artistry,\nWorldwide Reach',
     image: '/carousel3.png',
   },
   {
     id: 4,
-    subtitle: 'Preserving Traditional Techniques',
-    title: 'TIMELESS ARTISTRY',
+    eyebrow: 'Preserving Traditional Techniques',
+    title: 'Crafted By Hands,\nDelivered With Pride',
     image: '/carousel4.png',
   },
   {
     id: 5,
-    subtitle: 'Quality Assured Delivery',
-    title: 'WORLDWIDE SHIPPING',
+    eyebrow: 'Quality Assured Delivery',
+    title: 'From India\'s Heart\nTo Your Doorstep',
     image: '/carousel5.png',
   }
 ];
 
 const HeroSlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [current, setCurrent] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  };
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent(prev => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
+  const prev = () => setCurrent(p => (p === 0 ? slides.length - 1 : p - 1));
+  const next = () => setCurrent(p => (p === slides.length - 1 ? 0 : p + 1));
 
   return (
-    <div className={styles.heroSection}>
-      {slides.map((slide, index) => (
-        <div 
+    <div className={styles.hero}>
+      {slides.map((slide, i) => (
+        <div
           key={slide.id}
-          className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
+          className={`${styles.slide} ${i === current ? styles.active : ''}`}
           style={{ backgroundImage: `url(${slide.image})` }}
-        >
-        </div>
+        />
       ))}
-      
-      <button className={`${styles.navBtn} ${styles.prevBtn}`} onClick={prevSlide} aria-label="Previous slide">
-        <ArrowLeft size={20} />
+
+      <button className={`${styles.navBtn} ${styles.prevBtn}`} onClick={prev} aria-label="Previous">
+        <ArrowLeft size={18} />
       </button>
-      <button className={`${styles.navBtn} ${styles.nextBtn}`} onClick={nextSlide} aria-label="Next slide">
-        <ArrowRight size={20} />
+      <button className={`${styles.navBtn} ${styles.nextBtn}`} onClick={next} aria-label="Next">
+        <ArrowRight size={18} />
       </button>
+
+      <div className={styles.dots}>
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            className={`${styles.dot} ${i === current ? styles.dotActive : ''}`}
+            onClick={() => setCurrent(i)}
+          />
+        ))}
+      </div>
     </div>
   );
 };

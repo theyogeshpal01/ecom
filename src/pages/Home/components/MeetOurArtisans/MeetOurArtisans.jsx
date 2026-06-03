@@ -1,6 +1,7 @@
 import React from 'react';
 import { Users } from 'lucide-react';
 import styles from './MeetOurArtisans.module.css';
+import useScrollAnimation from '../../../../hooks/useScrollAnimation';
 
 const artisans = [
   {
@@ -22,14 +23,16 @@ const artisans = [
 ];
 
 const MeetOurArtisans = () => {
+  const headerRef = useScrollAnimation();
+  const gridRef = useScrollAnimation();
   return (
     <section className={styles.section}>
-      <div className={styles.header}>
+      <div className={styles.header} ref={headerRef} style={{opacity:0,transform:'translateY(30px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
         <h2 className={styles.title}>MEET OUR ARTISANS</h2>
         <p className={styles.subtitle}>The Hands Behind Our Crafts</p>
       </div>
 
-      <div className={styles.grid}>
+      <div className={styles.grid} ref={gridRef} style={{opacity:0,transform:'translateY(40px)',transition:'opacity 0.7s ease,transform 0.7s ease,transition-delay:0.15s'}}>
         {artisans.map((artisan) => (
           <div key={artisan.id} className={styles.card}>
             <div className={styles.imageContainer}>

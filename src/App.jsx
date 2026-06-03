@@ -7,6 +7,8 @@ import Product from './pages/Product/Product'; // We will create this
 import Enquiry from './pages/Enquiry/Enquiry';
 import './index.css';
 
+import Login from './pages/Login/Login';
+
 function App() {
   return (
     <Router>
@@ -17,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/product/:id/enquiry" element={<Enquiry />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         
         <Footer />

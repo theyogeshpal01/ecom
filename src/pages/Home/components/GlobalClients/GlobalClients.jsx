@@ -1,81 +1,106 @@
 import React from 'react';
-import { Award, Globe, Handshake, Check } from 'lucide-react';
+import { Check, MapPin, TrendingUp, Users, Globe2, Award, Handshake } from 'lucide-react';
 import styles from './GlobalClients.module.css';
+import useScrollAnimation from '../../../../hooks/useScrollAnimation';
+
+const stats = [
+  { number: '7+',    label: 'Years Experience', icon: <TrendingUp size={20} strokeWidth={1.5} /> },
+  { number: '25+',   label: 'Countries Served',  icon: <Globe2    size={20} strokeWidth={1.5} /> },
+  { number: '500+',  label: 'Artisan Clusters',  icon: <Users     size={20} strokeWidth={1.5} /> },
+  { number: '1000+', label: 'Local Clients',      icon: <Award     size={20} strokeWidth={1.5} /> },
+];
+
+const countries = [
+  'USA', 'UK', 'Canada', 'Australia', 'Germany',
+  'France', 'UAE', 'Japan', 'Singapore', 'South Africa',
+  'Italy', 'Netherlands', 'New Zealand', 'Sweden', 'Brazil',
+];
 
 const certifications = [
   'MSME Certified',
   'Handicraft Export Promotion Council Member',
   'Fair Trade Certified',
   'Eco-Friendly Production Certified',
-  'Government of India Recognized Exporter'
-];
-
-const countries = [
-  'USA', 'UK', 'Canada', 'Australia', 'Germany', 
-  'France', 'UAE', 'Japan', 'Singapore', 'South Africa'
+  'Government of India Recognized Exporter',
 ];
 
 const associations = [
-  'Member - Federation of Indian Export Organisations (FIEO)',
-  'Member - Export Promotion Council for Handicrafts (EPCH)',
-  'Partner - Craftmark (All India Artisans & Craftworkers)',
+  'Federation of Indian Export Organisations (FIEO)',
+  'Export Promotion Council for Handicrafts (EPCH)',
+  'Craftmark — All India Artisans & Craftworkers',
   'Associated with 500+ Artisan Clusters',
-  'Government Recognized MSME Unit'
 ];
 
 const GlobalClients = () => {
+  const headingRef = useScrollAnimation();
+  const statsRef   = useScrollAnimation();
+  const countriesRef = useScrollAnimation();
+  const bottomRef  = useScrollAnimation();
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.header}>
-          <h2 className={styles.title}>TRUSTED BY GLOBAL CLIENTS & PARTNERS</h2>
-          <p className={styles.subtitle}>
-            With over 7+ years of excellence in exporting authentic Indian handicrafts, we maintain the highest standards of quality and reliability that clients worldwide trust.
-          </p>
+
+        {/* Top: heading + stats */}
+        <div className={styles.topRow}>
+          <div className={styles.headingCol} ref={headingRef} style={{opacity:0,transform:'translateX(-40px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
+            <span className={styles.eyebrow}>Our Global Presence</span>
+            <h2 className={styles.title}>Trusted By Global<br />Clients & Partners</h2>
+            <p className={styles.subtitle}>
+              Over 7+ years of excellence in exporting authentic Indian handicrafts — maintaining the highest standards of quality and reliability worldwide.
+            </p>
+          </div>
+
+          <div className={styles.statsGrid} ref={statsRef} style={{opacity:0,transform:'translateX(40px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
+            {stats.map((s, i) => (
+              <div key={i} className={styles.statCard}>
+                <div className={styles.statIcon}>{s.icon}</div>
+                <span className={styles.statNumber}>{s.number}</span>
+                <span className={styles.statLabel}>{s.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className={styles.grid}>
-          {/* Column 1 */}
-          <div className={styles.card}>
-            <div className={styles.iconWrapper}>
-              <Award size={36} strokeWidth={1.5} />
+        {/* Countries strip */}
+        <div className={styles.countriesBlock} ref={countriesRef} style={{opacity:0,transform:'translateY(30px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
+          <div className={styles.countriesLabel}>
+            <MapPin size={14} /> Exporting To
+          </div>
+          <div className={styles.countriesStrip}>
+            {countries.map((c, i) => (
+              <span key={i} className={styles.countryPill}>{c}</span>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom: two panels */}
+        <div className={styles.bottomRow} ref={bottomRef} style={{opacity:0,transform:'translateY(30px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
+          <div className={styles.panel}>
+            <div className={styles.panelHeader}>
+              <Award size={18} strokeWidth={1.5} className={styles.panelIcon} />
+              <h3 className={styles.panelTitle}>Certifications & Quality</h3>
             </div>
-            <h3 className={styles.cardTitle}>CERTIFICATIONS & QUALITY STANDARDS</h3>
             <ul className={styles.list}>
-              {certifications.map((item, index) => (
-                <li key={index}>
-                  <Check size={16} className={styles.checkIcon} />
+              {certifications.map((item, i) => (
+                <li key={i}>
+                  <Check size={13} className={styles.check} />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 2 */}
-          <div className={styles.card}>
-            <div className={styles.iconWrapper}>
-              <Globe size={36} strokeWidth={1.5} />
-            </div>
-            <h3 className={styles.cardTitle}>GLOBAL EXPORT NETWORK</h3>
-            <p className={styles.highlightText}>Serving 25+ Countries Worldwide</p>
-            <div className={styles.tagsGrid}>
-              {countries.map((country, index) => (
-                <span key={index} className={styles.tag}>{country}</span>
-              ))}
-            </div>
-            <p className={styles.bottomText}>Fast & Reliable Shipping Worldwide</p>
-          </div>
+          <div className={styles.divider} />
 
-          {/* Column 3 */}
-          <div className={styles.card}>
-            <div className={styles.iconWrapper}>
-              <Handshake size={36} strokeWidth={1.5} />
+          <div className={styles.panel}>
+            <div className={styles.panelHeader}>
+              <Handshake size={18} strokeWidth={1.5} className={styles.panelIcon} />
+              <h3 className={styles.panelTitle}>Trade Associations</h3>
             </div>
-            <h3 className={styles.cardTitle}>TRADE ASSOCIATIONS & PARTNERSHIPS</h3>
             <ul className={styles.list}>
-              {associations.map((item, index) => (
-                <li key={index}>
-                  <Check size={16} className={styles.checkIcon} />
+              {associations.map((item, i) => (
+                <li key={i}>
+                  <Check size={13} className={styles.check} />
                   <span>{item}</span>
                 </li>
               ))}
@@ -83,16 +108,6 @@ const GlobalClients = () => {
           </div>
         </div>
 
-        <div className={styles.statsSection}>
-          <div className={styles.statBox}>
-            <h3 className={styles.statNumber}>50+</h3>
-            <p className={styles.statLabel}>Global Exports</p>
-          </div>
-          <div className={styles.statBox}>
-            <h3 className={styles.statNumber}>1000+</h3>
-            <p className={styles.statLabel}>Local</p>
-          </div>
-        </div>
       </div>
     </section>
   );

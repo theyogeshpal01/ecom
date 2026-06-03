@@ -58,8 +58,11 @@
   width: 80%;
   height: 80%;
   object-fit: contain;
+  object-position: center;
   mix-blend-mode: multiply;
   transition: transform 0.5s ease;
+  display: block;
+  margin: 0 auto;
 }
 
 .card:hover .image {
