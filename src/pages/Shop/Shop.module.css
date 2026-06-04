@@ -44,6 +44,27 @@
 .sidebar {
   width: 250px;
   flex-shrink: 0;
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  padding-right: 0.5rem; /* space for scrollbar */
+}
+
+/* Custom scrollbar for the sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+.sidebar::-webkit-scrollbar-track {
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #cb6b51;
 }
 
 .filterHeader {

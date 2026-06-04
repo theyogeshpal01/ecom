@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
 import Home from './pages/Home/Home';
+import About from './pages/About/About';
 import Product from './pages/Product/Product'; // We will create this
 import Enquiry from './pages/Enquiry/Enquiry';
 import './index.css';
@@ -18,6 +19,7 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about/us" element={<About />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/categories" element={<Shop />} />
           <Route path="/categories/:categoryId" element={<Shop />} />

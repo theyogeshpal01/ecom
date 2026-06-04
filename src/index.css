@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --color-brand-base: #C7815A;
   --color-brand-accent: #C7815A;
@@ -9,10 +11,12 @@
   --font-sans: sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 body {
