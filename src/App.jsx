@@ -12,6 +12,7 @@ import './index.css';
 
 import Login from './pages/Login/Login';
 import Shop from './pages/Shop/Shop';
+import HowWeWork from './pages/HowWeWork/HowWeWork';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about/us" element={<About />} />
           <Route path="/about/why-choose-us" element={<WhyChooseUs />} />
+          <Route path="/about/how-we-work" element={<HowWeWork />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/categories" element={<Shop />} />
