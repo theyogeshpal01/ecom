@@ -15,6 +15,11 @@ import Shop from './pages/Shop/Shop';
 import HowWeWork from './pages/HowWeWork/HowWeWork';
 import CustomProductDevelopment from './pages/Services/CustomProductDevelopment';
 import BulkWholesaleSupply from './pages/Services/BulkWholesaleSupply';
+import ExportLogistics from './pages/Services/ExportLogistics';
+import QualityAssurance from './pages/Services/QualityAssurance';
+import PrivateLabeling from './pages/Services/PrivateLabeling';
+import B2BPartnerships from './pages/Services/B2BPartnerships';
+import AffiliateProgram from './pages/Services/AffiliateProgram';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -46,6 +51,11 @@ function App() {
           <Route path="/product/:id/enquiry" element={<Enquiry />} />
           <Route path="/services/custom" element={<CustomProductDevelopment />} />
           <Route path="/services/wholesale" element={<BulkWholesaleSupply />} />
+          <Route path="/services/export" element={<ExportLogistics />} />
+          <Route path="/services/quality" element={<QualityAssurance />} />
+          <Route path="/services/private-labeling" element={<PrivateLabeling />} />
+          <Route path="/services/b2b" element={<B2BPartnerships />} />
+          <Route path="/services/affiliate" element={<AffiliateProgram />} />
           <Route path="/login" element={<Login />} />
         </Routes>
         

@@ -1,5 +1,5 @@
-/* Custom Product Development Styles */
-.custom-services-page {
+/* Export & Global Logistics Styles */
+.export-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
   background-color: #faf9f8;
@@ -27,8 +27,8 @@
 }
 
 /* Hero Section */
-.cs-hero {
-  background: linear-gradient(rgba(31, 28, 24, 0.85), rgba(62, 51, 42, 0.9)), url('/custom_product_development.png');
+.ex-hero {
+  background: linear-gradient(rgba(31, 28, 24, 0.85), rgba(62, 51, 42, 0.9)), url('/aboutus.png');
   background-size: cover;
   background-position: center;
   color: white;
@@ -37,7 +37,7 @@
   position: relative;
 }
 
-.cs-hero::after {
+.ex-hero::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -47,14 +47,14 @@
   background: linear-gradient(to bottom, transparent, #faf9f8);
 }
 
-.cs-hero-content {
+.ex-hero-content {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
 }
 
-.cs-tag {
+.ex-tag {
   display: inline-block;
   padding: 8px 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -68,14 +68,14 @@
   margin-bottom: 20px;
 }
 
-.cs-title {
+.ex-title {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 24px;
   line-height: 1.2;
 }
 
-.cs-subtitle {
+.ex-subtitle {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.6;
@@ -83,35 +83,75 @@
   margin: 0 auto;
 }
 
-/* What We Offer */
-.cs-offer-section {
-  padding: 80px 0;
+/* Stats Section */
+.ex-stats-section {
+  padding: 40px 0 80px;
   background: #faf9f8;
 }
 
-.offer-grid {
+.stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.stat-card {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  border-bottom: 4px solid var(--hww-primary);
+  transition: var(--hww-transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.stat-card h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--hww-primary);
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: var(--hww-gray);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Export Solutions */
+.ex-solutions-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
-.offer-card {
-  background: white;
+.solution-card {
+  background: #faf9f8;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.03);
   transition: var(--hww-transition);
   text-align: center;
 }
 
-.offer-card:hover {
+.solution-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   border-color: var(--hww-primary-light);
 }
 
-.offer-icon {
+.solution-icon {
   width: 80px;
   height: 80px;
   background: rgba(139, 90, 43, 0.1);
@@ -124,35 +164,120 @@
   transition: var(--hww-transition);
 }
 
-.offer-card:hover .offer-icon {
+.solution-card:hover .solution-icon {
   background: var(--hww-primary);
   color: white;
 }
 
-.offer-card h3 {
+.solution-card h3 {
   font-size: 1.4rem;
   margin-bottom: 15px;
   color: var(--hww-dark);
 }
 
-.offer-card p {
+.solution-card p {
   color: var(--hww-gray);
   line-height: 1.6;
 }
 
-/* Competitive Advantage */
-.cs-advantage-section {
-  padding: 100px 0;
+/* Export Documentation */
+.ex-docs-section {
+  padding: 80px 0;
+  background: #faf9f8;
+}
+
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.doc-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  transition: var(--hww-transition);
+}
+
+.doc-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.doc-icon {
+  color: var(--hww-primary);
+  background: rgba(139, 90, 43, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.doc-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--hww-dark);
+}
+
+.doc-content p {
+  color: var(--hww-gray);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Global Delivery Network */
+.ex-network-section {
+  padding: 80px 0;
   background: var(--hww-dark);
   color: white;
 }
 
-.cs-advantage-section .section-header h2 {
+.ex-network-section .section-header h2 {
   color: white;
 }
 
-.cs-advantage-section .section-header p {
+.ex-network-section .section-header p {
   color: #d4a373;
+}
+
+.network-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.network-card {
+  background: rgba(255,255,255,0.05);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: var(--hww-transition);
+}
+
+.network-card:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.network-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.network-card p {
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+
+/* Business Advantage */
+.ex-advantage-section {
+  padding: 100px 0;
+  background: white;
 }
 
 .advantage-grid {
@@ -166,20 +291,21 @@
   align-items: flex-start;
   gap: 15px;
   padding: 25px;
-  background: rgba(255,255,255,0.05);
+  background: #faf9f8;
   border-radius: 15px;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,0,0,0.03);
   transition: var(--hww-transition);
 }
 
 .adv-item:hover {
-  background: rgba(255,255,255,0.1);
+  background: white;
   transform: translateY(-5px);
-  border-color: rgba(255,255,255,0.2);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  border-color: var(--hww-primary-light);
 }
 
 .adv-icon {
-  color: #d4a373;
+  color: var(--hww-primary);
   flex-shrink: 0;
   margin-top: 5px;
 }
@@ -188,42 +314,19 @@
   font-size: 1.1rem;
   margin-bottom: 10px;
   font-weight: 600;
+  color: var(--hww-dark);
 }
 
 .adv-content p {
   font-size: 0.9rem;
-  color: rgba(255,255,255,0.7);
+  color: var(--hww-gray);
   line-height: 1.5;
 }
 
-/* Product Categories */
-.cs-categories-section {
+/* Order Process */
+.ex-process-section {
   padding: 80px 0;
   background: #faf9f8;
-}
-
-.empty-state {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 60px 20px;
-  background: white;
-  border-radius: 20px;
-  border: 2px dashed #e0dcd9;
-  color: var(--hww-gray);
-}
-
-.empty-icon {
-  margin-bottom: 20px;
-  opacity: 0.5;
-}
-
-/* Development Process */
-.cs-process-section {
-  padding: 80px 0;
-  background: white;
 }
 
 .process-steps-container {
@@ -234,20 +337,21 @@
   gap: 30px;
 }
 
-.cs-process-step {
+.ex-process-step {
   display: flex;
   align-items: center;
   gap: 30px;
   padding: 30px;
-  background: #faf9f8;
+  background: white;
   border-radius: 20px;
   border-left: 5px solid var(--hww-primary);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
   transition: var(--hww-transition);
 }
 
-.cs-process-step:hover {
+.ex-process-step:hover {
   transform: translateX(10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
 }
 
 .step-number {
@@ -270,31 +374,31 @@
 }
 
 /* CTA Section */
-.cs-cta-section {
+.ex-cta-section {
   padding: 100px 20px;
   background: linear-gradient(135deg, var(--hww-primary), #633f1e);
   color: white;
   text-align: center;
 }
 
-.cs-cta-inner {
+.ex-cta-inner {
   max-width: 700px;
   margin: 0 auto;
 }
 
-.cs-cta-inner h2 {
+.ex-cta-inner h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.cs-cta-inner p {
+.ex-cta-inner p {
   font-size: 1.1rem;
   opacity: 0.9;
   margin-bottom: 40px;
   line-height: 1.6;
 }
 
-.cs-btn {
+.ex-btn {
   display: inline-block;
   padding: 16px 40px;
   background: white;
@@ -307,17 +411,17 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.cs-btn:hover {
+.ex-btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
   background: var(--hww-dark);
   color: white;
 }
 
-/* Why Partner With Us */
-.cs-partners-section {
+/* Why Partners Choose Us */
+.ex-partners-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: white;
 }
 
 .partners-grid {
@@ -327,17 +431,18 @@
 }
 
 .partner-card {
-  background: white;
+  background: #faf9f8;
   padding: 30px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
   transition: var(--hww-transition);
 }
 
 .partner-card:hover {
   transform: translateY(-5px);
   border-bottom: 4px solid var(--hww-primary);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
 }
 
 .partner-icon {
@@ -358,13 +463,13 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .cs-title {
+  .ex-title {
     font-size: 2.5rem;
   }
-  .cs-hero {
+  .ex-hero {
     padding: 100px 20px 60px;
   }
-  .cs-process-step {
+  .ex-process-step {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;

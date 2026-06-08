@@ -1,5 +1,5 @@
-/* Custom Product Development Styles */
-.custom-services-page {
+/* Affiliate Program Styles */
+.affiliate-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
   background-color: #faf9f8;
@@ -27,8 +27,8 @@
 }
 
 /* Hero Section */
-.cs-hero {
-  background: linear-gradient(rgba(31, 28, 24, 0.85), rgba(62, 51, 42, 0.9)), url('/custom_product_development.png');
+.aff-hero {
+  background: linear-gradient(rgba(31, 28, 24, 0.85), rgba(62, 51, 42, 0.9)), url('/aboutus.png');
   background-size: cover;
   background-position: center;
   color: white;
@@ -37,7 +37,7 @@
   position: relative;
 }
 
-.cs-hero::after {
+.aff-hero::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -47,14 +47,14 @@
   background: linear-gradient(to bottom, transparent, #faf9f8);
 }
 
-.cs-hero-content {
+.aff-hero-content {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
 }
 
-.cs-tag {
+.aff-tag {
   display: inline-block;
   padding: 8px 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -68,14 +68,14 @@
   margin-bottom: 20px;
 }
 
-.cs-title {
+.aff-title {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 24px;
   line-height: 1.2;
 }
 
-.cs-subtitle {
+.aff-subtitle {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.6;
@@ -83,35 +83,35 @@
   margin: 0 auto;
 }
 
-/* What We Offer */
-.cs-offer-section {
+/* Benefits Section */
+.aff-benefits-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: white;
 }
 
-.offer-grid {
+.benefits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
-.offer-card {
-  background: white;
+.benefit-card {
+  background: #faf9f8;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.03);
   transition: var(--hww-transition);
   text-align: center;
 }
 
-.offer-card:hover {
+.benefit-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   border-color: var(--hww-primary-light);
 }
 
-.offer-icon {
+.benefit-icon {
   width: 80px;
   height: 80px;
   background: rgba(139, 90, 43, 0.1);
@@ -124,106 +124,26 @@
   transition: var(--hww-transition);
 }
 
-.offer-card:hover .offer-icon {
+.benefit-card:hover .benefit-icon {
   background: var(--hww-primary);
   color: white;
 }
 
-.offer-card h3 {
+.benefit-card h3 {
   font-size: 1.4rem;
   margin-bottom: 15px;
   color: var(--hww-dark);
 }
 
-.offer-card p {
+.benefit-card p {
   color: var(--hww-gray);
   line-height: 1.6;
 }
 
-/* Competitive Advantage */
-.cs-advantage-section {
-  padding: 100px 0;
-  background: var(--hww-dark);
-  color: white;
-}
-
-.cs-advantage-section .section-header h2 {
-  color: white;
-}
-
-.cs-advantage-section .section-header p {
-  color: #d4a373;
-}
-
-.advantage-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.adv-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  padding: 25px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 15px;
-  border: 1px solid rgba(255,255,255,0.05);
-  transition: var(--hww-transition);
-}
-
-.adv-item:hover {
-  background: rgba(255,255,255,0.1);
-  transform: translateY(-5px);
-  border-color: rgba(255,255,255,0.2);
-}
-
-.adv-icon {
-  color: #d4a373;
-  flex-shrink: 0;
-  margin-top: 5px;
-}
-
-.adv-content h4 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.adv-content p {
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.7);
-  line-height: 1.5;
-}
-
-/* Product Categories */
-.cs-categories-section {
+/* Process Section */
+.aff-process-section {
   padding: 80px 0;
   background: #faf9f8;
-}
-
-.empty-state {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 60px 20px;
-  background: white;
-  border-radius: 20px;
-  border: 2px dashed #e0dcd9;
-  color: var(--hww-gray);
-}
-
-.empty-icon {
-  margin-bottom: 20px;
-  opacity: 0.5;
-}
-
-/* Development Process */
-.cs-process-section {
-  padding: 80px 0;
-  background: white;
 }
 
 .process-steps-container {
@@ -234,20 +154,21 @@
   gap: 30px;
 }
 
-.cs-process-step {
+.aff-process-step {
   display: flex;
   align-items: center;
   gap: 30px;
   padding: 30px;
-  background: #faf9f8;
+  background: white;
   border-radius: 20px;
   border-left: 5px solid var(--hww-primary);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
   transition: var(--hww-transition);
 }
 
-.cs-process-step:hover {
+.aff-process-step:hover {
   transform: translateX(10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
 }
 
 .step-number {
@@ -258,10 +179,21 @@
   min-width: 60px;
 }
 
-.step-content h4 {
-  font-size: 1.3rem;
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 10px;
   color: var(--hww-dark);
+}
+
+.step-header svg {
+  color: var(--hww-primary);
+}
+
+.step-header h4 {
+  font-size: 1.3rem;
+  margin: 0;
 }
 
 .step-content p {
@@ -270,31 +202,31 @@
 }
 
 /* CTA Section */
-.cs-cta-section {
+.aff-cta-section {
   padding: 100px 20px;
   background: linear-gradient(135deg, var(--hww-primary), #633f1e);
   color: white;
   text-align: center;
 }
 
-.cs-cta-inner {
+.aff-cta-inner {
   max-width: 700px;
   margin: 0 auto;
 }
 
-.cs-cta-inner h2 {
+.aff-cta-inner h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.cs-cta-inner p {
+.aff-cta-inner p {
   font-size: 1.1rem;
   opacity: 0.9;
   margin-bottom: 40px;
   line-height: 1.6;
 }
 
-.cs-btn {
+.aff-btn {
   display: inline-block;
   padding: 16px 40px;
   background: white;
@@ -307,64 +239,22 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.cs-btn:hover {
+.aff-btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
   background: var(--hww-dark);
   color: white;
 }
 
-/* Why Partner With Us */
-.cs-partners-section {
-  padding: 80px 0;
-  background: #faf9f8;
-}
-
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.partner-card {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-  transition: var(--hww-transition);
-}
-
-.partner-card:hover {
-  transform: translateY(-5px);
-  border-bottom: 4px solid var(--hww-primary);
-}
-
-.partner-icon {
-  color: var(--hww-primary);
-  margin-bottom: 20px;
-}
-
-.partner-card h4 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-
-.partner-card p {
-  color: var(--hww-gray);
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
-  .cs-title {
+  .aff-title {
     font-size: 2.5rem;
   }
-  .cs-hero {
+  .aff-hero {
     padding: 100px 20px 60px;
   }
-  .cs-process-step {
+  .aff-process-step {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;

@@ -1,5 +1,5 @@
-/* Custom Product Development Styles */
-.custom-services-page {
+/* Quality Assurance Styles */
+.qa-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
   background-color: #faf9f8;
@@ -27,8 +27,8 @@
 }
 
 /* Hero Section */
-.cs-hero {
-  background: linear-gradient(rgba(31, 28, 24, 0.85), rgba(62, 51, 42, 0.9)), url('/custom_product_development.png');
+.qa-hero {
+  background: linear-gradient(rgba(31, 28, 24, 0.85), rgba(62, 51, 42, 0.9)), url('/aboutus.png');
   background-size: cover;
   background-position: center;
   color: white;
@@ -37,7 +37,7 @@
   position: relative;
 }
 
-.cs-hero::after {
+.qa-hero::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -47,14 +47,14 @@
   background: linear-gradient(to bottom, transparent, #faf9f8);
 }
 
-.cs-hero-content {
+.qa-hero-content {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
 }
 
-.cs-tag {
+.qa-tag {
   display: inline-block;
   padding: 8px 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -68,14 +68,14 @@
   margin-bottom: 20px;
 }
 
-.cs-title {
+.qa-title {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 24px;
   line-height: 1.2;
 }
 
-.cs-subtitle {
+.qa-subtitle {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.6;
@@ -83,35 +83,75 @@
   margin: 0 auto;
 }
 
-/* What We Offer */
-.cs-offer-section {
-  padding: 80px 0;
+/* Stats Section */
+.qa-stats-section {
+  padding: 40px 0 80px;
   background: #faf9f8;
 }
 
-.offer-grid {
+.stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.stat-card {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  border-bottom: 4px solid var(--hww-primary);
+  transition: var(--hww-transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.stat-card h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--hww-primary);
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: var(--hww-gray);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Quality Standards */
+.qa-standards-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.standards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
-.offer-card {
-  background: white;
+.standard-card {
+  background: #faf9f8;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.03);
   transition: var(--hww-transition);
   text-align: center;
 }
 
-.offer-card:hover {
+.standard-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   border-color: var(--hww-primary-light);
 }
 
-.offer-icon {
+.standard-icon {
   width: 80px;
   height: 80px;
   background: rgba(139, 90, 43, 0.1);
@@ -124,34 +164,131 @@
   transition: var(--hww-transition);
 }
 
-.offer-card:hover .offer-icon {
+.standard-card:hover .standard-icon {
   background: var(--hww-primary);
   color: white;
 }
 
-.offer-card h3 {
+.standard-card h3 {
   font-size: 1.4rem;
   margin-bottom: 15px;
   color: var(--hww-dark);
 }
 
-.offer-card p {
+.standard-card p {
   color: var(--hww-gray);
   line-height: 1.6;
 }
 
-/* Competitive Advantage */
-.cs-advantage-section {
+/* Detailed Checks */
+.qa-checks-section {
+  padding: 80px 0;
+  background: #faf9f8;
+}
+
+.checks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.check-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  transition: var(--hww-transition);
+}
+
+.check-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.check-icon {
+  color: var(--hww-primary);
+  background: rgba(139, 90, 43, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.check-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--hww-dark);
+}
+
+.check-content p {
+  color: var(--hww-gray);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Order Process */
+.qa-process-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.process-steps-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.qa-process-step {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  background: #faf9f8;
+  border-radius: 20px;
+  border-left: 5px solid var(--hww-primary);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  transition: var(--hww-transition);
+}
+
+.qa-process-step:hover {
+  transform: translateX(10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.step-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(139, 90, 43, 0.2);
+  min-width: 60px;
+}
+
+.step-content h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--hww-dark);
+}
+
+.step-content p {
+  color: var(--hww-gray);
+  line-height: 1.6;
+}
+
+/* Business Advantage */
+.qa-advantage-section {
   padding: 100px 0;
   background: var(--hww-dark);
   color: white;
 }
 
-.cs-advantage-section .section-header h2 {
+.qa-advantage-section .section-header h2 {
   color: white;
 }
 
-.cs-advantage-section .section-header p {
+.qa-advantage-section .section-header p {
   color: #d4a373;
 }
 
@@ -188,6 +325,7 @@
   font-size: 1.1rem;
   margin-bottom: 10px;
   font-weight: 600;
+  color: white;
 }
 
 .adv-content p {
@@ -196,105 +334,33 @@
   line-height: 1.5;
 }
 
-/* Product Categories */
-.cs-categories-section {
-  padding: 80px 0;
-  background: #faf9f8;
-}
-
-.empty-state {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 60px 20px;
-  background: white;
-  border-radius: 20px;
-  border: 2px dashed #e0dcd9;
-  color: var(--hww-gray);
-}
-
-.empty-icon {
-  margin-bottom: 20px;
-  opacity: 0.5;
-}
-
-/* Development Process */
-.cs-process-section {
-  padding: 80px 0;
-  background: white;
-}
-
-.process-steps-container {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.cs-process-step {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 30px;
-  background: #faf9f8;
-  border-radius: 20px;
-  border-left: 5px solid var(--hww-primary);
-  transition: var(--hww-transition);
-}
-
-.cs-process-step:hover {
-  transform: translateX(10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-}
-
-.step-number {
-  font-size: 3rem;
-  font-weight: 800;
-  color: transparent;
-  -webkit-text-stroke: 2px rgba(139, 90, 43, 0.2);
-  min-width: 60px;
-}
-
-.step-content h4 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: var(--hww-dark);
-}
-
-.step-content p {
-  color: var(--hww-gray);
-  line-height: 1.6;
-}
 
 /* CTA Section */
-.cs-cta-section {
+.qa-cta-section {
   padding: 100px 20px;
   background: linear-gradient(135deg, var(--hww-primary), #633f1e);
   color: white;
   text-align: center;
 }
 
-.cs-cta-inner {
+.qa-cta-inner {
   max-width: 700px;
   margin: 0 auto;
 }
 
-.cs-cta-inner h2 {
+.qa-cta-inner h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.cs-cta-inner p {
+.qa-cta-inner p {
   font-size: 1.1rem;
   opacity: 0.9;
   margin-bottom: 40px;
   line-height: 1.6;
 }
 
-.cs-btn {
+.qa-btn {
   display: inline-block;
   padding: 16px 40px;
   background: white;
@@ -307,17 +373,17 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.cs-btn:hover {
+.qa-btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
   background: var(--hww-dark);
   color: white;
 }
 
-/* Why Partner With Us */
-.cs-partners-section {
+/* Why Partners Choose Us */
+.qa-partners-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: white;
 }
 
 .partners-grid {
@@ -327,17 +393,18 @@
 }
 
 .partner-card {
-  background: white;
+  background: #faf9f8;
   padding: 30px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
   transition: var(--hww-transition);
 }
 
 .partner-card:hover {
   transform: translateY(-5px);
   border-bottom: 4px solid var(--hww-primary);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
 }
 
 .partner-icon {
@@ -358,13 +425,13 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .cs-title {
+  .qa-title {
     font-size: 2.5rem;
   }
-  .cs-hero {
+  .qa-hero {
     padding: 100px 20px 60px;
   }
-  .cs-process-step {
+  .qa-process-step {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
