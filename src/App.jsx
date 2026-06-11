@@ -20,6 +20,9 @@ import QualityAssurance from './pages/Services/QualityAssurance';
 import PrivateLabeling from './pages/Services/PrivateLabeling';
 import B2BPartnerships from './pages/Services/B2BPartnerships';
 import AffiliateProgram from './pages/Services/AffiliateProgram';
+import Blog from './pages/Blog/Blog';
+import Gallery from './pages/Gallery/Gallery';
+import Testimonials from './pages/Testimonials/Testimonials';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -56,6 +59,9 @@ function App() {
           <Route path="/services/private-labeling" element={<PrivateLabeling />} />
           <Route path="/services/b2b" element={<B2BPartnerships />} />
           <Route path="/services/affiliate" element={<AffiliateProgram />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/login" element={<Login />} />
         </Routes>
         

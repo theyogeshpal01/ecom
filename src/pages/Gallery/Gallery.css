@@ -1,0 +1,250 @@
+/* Gallery Page Styles */
+.gallery-page {
+  font-family: 'Inter', 'Outfit', sans-serif;
+  color: var(--hww-dark);
+  background-color: #faf9f8;
+}
+
+/* Header Section */
+.gallery-header-section {
+  background: linear-gradient(rgba(31, 28, 24, 0.7), rgba(62, 51, 42, 0.8)), url('/custom_product_development.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+.gallery-header-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Main Layout */
+.gallery-main-section {
+  padding: 60px 0;
+}
+
+.gallery-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.gallery-sidebar {
+  flex: 0 0 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  position: sticky;
+  top: 100px;
+}
+
+.filter-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  color: var(--hww-dark);
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  margin-bottom: 10px;
+}
+
+.category-btn {
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  color: var(--hww-gray);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--hww-transition);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.category-btn:hover {
+  background: rgba(139, 90, 43, 0.05);
+  color: var(--hww-primary);
+}
+
+.category-btn.active {
+  background: var(--hww-primary);
+  color: white;
+  font-weight: 600;
+}
+
+/* Gallery Content Area */
+.gallery-content {
+  flex: 1;
+}
+
+.gallery-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0dcd9;
+}
+
+.gallery-content-header h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--hww-dark);
+}
+
+.gallery-content-header p {
+  color: var(--hww-gray);
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.gallery-item-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+  transition: var(--hww-transition);
+  border: 1px solid #f0f0f0;
+}
+
+.gallery-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.item-image-placeholder {
+  background: #f4f0ec;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.item-category-tag {
+  color: rgba(139, 90, 43, 0.4);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.item-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.item-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: var(--hww-dark);
+  font-weight: 600;
+}
+
+.item-info p {
+  font-size: 0.85rem;
+  color: var(--hww-primary);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Shared Moments */
+.shared-moments-section {
+  padding: 80px 0 120px;
+  background: white;
+}
+
+.shared-moments-section .section-header {
+  margin-bottom: 40px;
+}
+
+.shared-moments-section .subtitle {
+  font-size: 1.2rem;
+  color: var(--hww-primary);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.shared-moments-section .desc {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--hww-gray);
+  line-height: 1.6;
+}
+
+.shared-moments-empty {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.empty-box {
+  background: #faf9f8;
+  border: 2px dashed #dcd3cb;
+  border-radius: 15px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.empty-box p {
+  color: var(--hww-gray);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .gallery-layout {
+    flex-direction: column;
+  }
+  .gallery-sidebar {
+    flex: none;
+    width: 100%;
+    position: static;
+  }
+  .category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .category-list li {
+    margin-bottom: 0;
+  }
+  .category-btn {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-header-content h1 {
+    font-size: 2.5rem;
+  }
+  .gallery-content-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
