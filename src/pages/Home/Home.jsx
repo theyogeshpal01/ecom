@@ -1,4 +1,7 @@
 import React from 'react';
+import LuxuryHero from './components/LuxuryHero/LuxuryHero';
+import LuxuryHeritage from './components/LuxuryHeritage/LuxuryHeritage';
+import LuxuryQuote from './components/LuxuryQuote/LuxuryQuote';
 import HeroSlider from './components/HeroSlider/HeroSlider';
 import ShopByCategories from './components/ShopByCategories/ShopByCategories';
 import FeaturedProducts from './components/FeaturedProducts/FeaturedProducts';
@@ -18,10 +21,13 @@ import styles from './Home.module.css';
 const Home = () => {
   return (
     <main className={styles.homeContainer}>
+      <LuxuryHero />
       <HeroSlider />
       
       <FilterBar />
       <AboutCTASection />
+
+      <LuxuryHeritage />
 
       <ShopByCategories />
       <FeaturedProducts />
@@ -39,6 +45,8 @@ const Home = () => {
         imageSrc="https://images.unsplash.com/photo-1610701596007-11502861dcfa?q=80&w=800&auto=format&fit=crop"
         imageAlt="Pottery details"
       />
+      
+      <LuxuryQuote />
       
       {/* Our Commitment using the Highlight Grid layout */}
       <HighlightGrid />
