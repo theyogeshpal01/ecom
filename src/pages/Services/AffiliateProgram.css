@@ -2,7 +2,7 @@
 .affiliate-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
-  background-color: #faf9f8;
+  background-color: #ffffff;
   overflow-x: clip;
 }
 
@@ -44,7 +44,7 @@
   left: 0;
   right: 0;
   height: 60px;
-  background: linear-gradient(to bottom, transparent, #faf9f8);
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
 
 .aff-hero-content {
@@ -96,7 +96,7 @@
 }
 
 .benefit-card {
-  background: #faf9f8;
+  background: #ffffff;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.02);
@@ -143,7 +143,7 @@
 /* Process Section */
 .aff-process-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .process-steps-container {

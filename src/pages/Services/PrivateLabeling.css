@@ -2,7 +2,7 @@
 .pl-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
-  background-color: #faf9f8;
+  background-color: #ffffff;
   overflow-x: clip;
 }
 
@@ -44,7 +44,7 @@
   left: 0;
   right: 0;
   height: 60px;
-  background: linear-gradient(to bottom, transparent, #faf9f8);
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
 
 .pl-hero-content {
@@ -86,7 +86,7 @@
 /* Stats Section */
 .pl-stats-section {
   padding: 40px 0 80px;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .stats-grid {
@@ -136,7 +136,7 @@
 }
 
 .solution-card {
-  background: #faf9f8;
+  background: #ffffff;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.02);
@@ -183,7 +183,7 @@
 /* Our Branding Services Grid */
 .pl-services-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .services-grid {
@@ -298,7 +298,7 @@
 }
 
 .pl-identity-section {
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .packaging-grid, .identity-grid {
@@ -319,7 +319,7 @@
 }
 
 .pl-identity-section .identity-card {
-  background: #faf9f8;
+  background: #ffffff;
   border: 1px solid rgba(0,0,0,0.05);
   box-shadow: none;
 }
@@ -418,7 +418,7 @@
 }
 
 .testimonial-card {
-  background: #faf9f8;
+  background: #ffffff;
   padding: 40px 30px;
   border-radius: 20px;
   text-align: center;
@@ -455,7 +455,7 @@
 /* Order Process */
 .pl-process-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .process-steps-container {
@@ -560,7 +560,7 @@
 }
 
 .partner-card {
-  background: #faf9f8;
+  background: #ffffff;
   padding: 30px;
   border-radius: 15px;
   text-align: center;

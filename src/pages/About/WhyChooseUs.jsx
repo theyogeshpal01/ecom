@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
         <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 to-transparent"></div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <div className="inline-block px-4 py-2 bg-orange-500/20 text-orange-400 rounded-full text-sm font-semibold tracking-wider mb-6">
+          <div className="inline-block px-4 py-2 bg-white0/20 text-orange-400 rounded-full text-sm font-semibold tracking-wider mb-6">
             WHY CHOOSE US
           </div>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 font-serif">
@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
             </p>
             <div className="space-y-6 mt-8">
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0">
                   <Star className="text-orange-500" size={24} />
                 </div>
                 <div>
@@ -78,7 +78,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0">
                   <ShieldCheck className="text-orange-500" size={24} />
                 </div>
                 <div>
@@ -87,7 +87,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0">
                   <FileText className="text-orange-500" size={24} />
                 </div>
                 <div>
@@ -126,7 +126,7 @@ const WhyChooseUs = () => {
               { icon: Star, title: 'Handcrafted', desc: 'Authentic products handmade by skilled artisans preserving traditional techniques' },
             ].map((feature, i) => (
               <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 group">
-                <div className="w-14 h-14 bg-orange-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors duration-300">
+                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 group-hover:bg-white0 transition-colors duration-300">
                   <feature.icon className="text-orange-500 group-hover:text-white transition-colors" size={28} />
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h4>
@@ -158,7 +158,7 @@ const WhyChooseUs = () => {
               { icon: Truck, title: 'Global Shipping', desc: 'Comprehensive logistics with partners ensuring smooth deliveries worldwide.' },
             ].map((sol, i) => (
               <div key={i} className="flex gap-6 items-start group">
-                <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-orange-500/20 group-hover:border-orange-500/50 transition-all duration-300">
+                <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-white0/20 group-hover:border-orange-500/50 transition-all duration-300">
                   <sol.icon className="text-orange-500" size={32} />
                 </div>
                 <div>
@@ -277,7 +277,7 @@ const WhyChooseUs = () => {
               { title: 'Client Success', desc: 'Proven track record of helping businesses grow through reliable partnerships.' },
             ].map((diff, i) => (
               <div key={i}>
-                <div className="w-12 h-12 bg-orange-500/20 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 border border-orange-500/30">
+                <div className="w-12 h-12 bg-white0/20 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 border border-orange-500/30">
                   <span className="font-bold">{i+1}</span>
                 </div>
                 <h4 className="text-lg font-bold mb-2">{diff.title}</h4>
@@ -289,7 +289,7 @@ const WhyChooseUs = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 md:px-12 bg-orange-50">
+      <section className="py-20 px-6 md:px-12 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6">Ready To Experience Excellence?</h2>
           <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">

@@ -2,7 +2,7 @@
 .custom-services-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
-  background-color: #faf9f8;
+  background-color: #ffffff;
   overflow-x: clip;
 }
 
@@ -44,7 +44,7 @@
   left: 0;
   right: 0;
   height: 60px;
-  background: linear-gradient(to bottom, transparent, #faf9f8);
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
 
 .cs-hero-content {
@@ -86,7 +86,7 @@
 /* What We Offer */
 .cs-offer-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .offer-grid {
@@ -199,7 +199,7 @@
 /* Product Categories */
 .cs-categories-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .empty-state {
@@ -239,7 +239,7 @@
   align-items: center;
   gap: 30px;
   padding: 30px;
-  background: #faf9f8;
+  background: #ffffff;
   border-radius: 20px;
   border-left: 5px solid var(--hww-primary);
   transition: var(--hww-transition);
@@ -317,7 +317,7 @@
 /* Why Partner With Us */
 .cs-partners-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .partners-grid {

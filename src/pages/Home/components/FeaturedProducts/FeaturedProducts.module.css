@@ -1,6 +1,6 @@
 .section {
   padding: 5rem 2rem;
-  background-color: #faf9f6;
+  background-color: #ffffff;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -46,7 +46,7 @@
   position: relative;
   width: 100%;
   height: 350px;
-  background-color: #f8f6f0; /* Off-white aesthetic background */
+  background-color: #ffffff; /* Off-white aesthetic background */
   display: flex;
   align-items: center;
   justify-content: center;

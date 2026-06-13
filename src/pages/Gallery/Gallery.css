@@ -2,7 +2,7 @@
 .gallery-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
-  background-color: #faf9f8;
+  background-color: #ffffff;
 }
 
 /* Header Section */
@@ -137,7 +137,7 @@
 }
 
 .item-image-placeholder {
-  background: #f4f0ec;
+  background: #ffffff;
   height: 250px;
   display: flex;
   align-items: center;
@@ -202,7 +202,7 @@
 }
 
 .empty-box {
-  background: #faf9f8;
+  background: #ffffff;
   border: 2px dashed #dcd3cb;
   border-radius: 15px;
   padding: 60px 20px;

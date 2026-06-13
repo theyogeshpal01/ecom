@@ -2,7 +2,7 @@
 .blog-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
-  background-color: #faf9f8;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -51,7 +51,7 @@
   left: 0;
   right: 0;
   height: 60px;
-  background: linear-gradient(to bottom, transparent, #faf9f8);
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
 
 .blog-hero-content {
@@ -108,7 +108,7 @@
 /* Topics Section */
 .blog-topics-section {
   padding: 60px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .topics-header {
@@ -214,7 +214,7 @@
 
 .artisan-card {
   display: flex;
-  background: #faf9f8;
+  background: #ffffff;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0,0,0,0.03);
@@ -323,7 +323,7 @@
 /* Newsletter Section */
 .blog-newsletter-section {
   padding: 80px 0 120px;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .newsletter-box {

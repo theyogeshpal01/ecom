@@ -14,7 +14,7 @@
 .how-we-work-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
-  background-color: #faf9f8;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -43,7 +43,7 @@
   left: 0;
   right: 0;
   height: 60px;
-  background: linear-gradient(to bottom, transparent, #faf9f8);
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
 
 .hww-hero-content {
@@ -319,7 +319,7 @@
 /* CTA Section */
 .hww-cta-section {
   padding: 100px 20px;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .hww-cta-content {

@@ -312,7 +312,7 @@
   color: #333333;
   width: 40%;
   border-bottom: 1px solid #eeeeee;
-  background-color: #faf9f6;
+  background-color: #ffffff;
 }
 
 .specTable td {
@@ -395,7 +395,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.25rem;
-  background-color: #faf9f6; /* Very light beige */
+  background-color: #ffffff; /* Very light beige */
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -459,7 +459,7 @@
 }
 
 .sizeTable th {
-  background-color: #faf9f6;
+  background-color: #ffffff;
   font-weight: 600;
   padding: 1rem 0.5rem;
   border-bottom: 2px solid #ffffff;

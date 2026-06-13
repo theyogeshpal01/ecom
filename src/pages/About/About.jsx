@@ -21,7 +21,7 @@ const About = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-900/90 to-transparent"></div>
         <div className="relative z-10 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-block px-4 py-2 bg-orange-500/20 text-orange-400 rounded-full text-sm font-semibold tracking-wider mb-6">
+            <div className="inline-block px-4 py-2 bg-white0/20 text-orange-400 rounded-full text-sm font-semibold tracking-wider mb-6">
               HIEIL CRAFTSMANSHIP
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 font-serif">
@@ -35,7 +35,7 @@ const About = () => {
               With every handcrafted creation, we strive to tell a story — a story of culture, legacy, and passion, making each piece a true representation of India's traditional artistry.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-semibold transition-all duration-300 shadow-lg shadow-orange-500/30 flex items-center gap-2">
+              <button className="px-8 py-4 bg-white0 hover:bg-orange-600 text-white rounded-full font-semibold transition-all duration-300 shadow-lg shadow-orange-500/30 flex items-center gap-2">
                 Contact Us <ChevronRight size={20} />
               </button>
             </div>
@@ -49,14 +49,14 @@ const About = () => {
                   <span className="block text-xl font-medium tracking-wide uppercase text-white">Years of<br/>Excellence</span>
                 </div>
               </div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-orange-500/10 rounded-full animate-pulse blur-3xl"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-white0/10 rounded-full animate-pulse blur-3xl"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Profile Download Section */}
-      <section className="py-10 bg-orange-50 border-y border-orange-100">
+      <section className="py-10 bg-white border-y border-orange-100">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-1">Company Profile Pdf</h3>
@@ -228,7 +228,7 @@ const About = () => {
               { icon: Globe, title: 'Trust', desc: 'Building relationships through transparent practices and reliable service.' },
             ].map((value, i) => (
               <div key={i} className="group">
-                <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-orange-500 transition-colors duration-300">
+                <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-white0 transition-colors duration-300">
                   <value.icon className="text-orange-500 group-hover:text-white transition-colors" size={24} />
                 </div>
                 <h4 className="text-xl font-bold mb-2">{value.title}</h4>
@@ -240,7 +240,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-6 md:px-12 bg-orange-50">
+      <section className="py-16 px-6 md:px-12 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">Ready To Experience Hieil Craftsmanship?</h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">

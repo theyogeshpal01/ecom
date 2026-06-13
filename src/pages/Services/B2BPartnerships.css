@@ -2,7 +2,7 @@
 .b2b-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
-  background-color: #faf9f8;
+  background-color: #ffffff;
   overflow-x: clip;
 }
 
@@ -44,7 +44,7 @@
   left: 0;
   right: 0;
   height: 60px;
-  background: linear-gradient(to bottom, transparent, #faf9f8);
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
 
 .b2b-hero-content {
@@ -86,7 +86,7 @@
 /* Stats Section */
 .b2b-stats-section {
   padding: 40px 0 80px;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .stats-grid {
@@ -136,7 +136,7 @@
 }
 
 .network-card {
-  background: #faf9f8;
+  background: #ffffff;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.02);
@@ -183,7 +183,7 @@
 /* Partnership Models */
 .b2b-models-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .models-grid {
@@ -304,7 +304,7 @@
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  background: #faf9f8;
+  background: #ffffff;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.02);
@@ -338,7 +338,7 @@
 /* Flexible Terms Grid */
 .b2b-terms-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .terms-grid {
@@ -452,7 +452,7 @@
 }
 
 .testimonial-card {
-  background: #faf9f8;
+  background: #ffffff;
   padding: 40px 30px;
   border-radius: 20px;
   text-align: center;
@@ -489,7 +489,7 @@
 /* Order Process */
 .b2b-process-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .process-steps-container {
@@ -594,7 +594,7 @@
 }
 
 .partner-card {
-  background: #faf9f8;
+  background: #ffffff;
   padding: 30px;
   border-radius: 15px;
   text-align: center;

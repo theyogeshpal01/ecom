@@ -2,7 +2,7 @@
 .contact-page {
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--hww-dark);
-  background-color: #faf9f8;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   height: 60px;
-  background: linear-gradient(to bottom, transparent, #faf9f8);
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
 
 .contact-hero-content {
@@ -66,7 +66,7 @@
 /* Quick Contacts */
 .quick-contacts-section {
   padding: 20px 0 60px;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .quick-contacts-grid {
@@ -129,7 +129,7 @@
 /* Main Content Area */
 .contact-main-section {
   padding: 40px 0 80px;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .contact-layout {
@@ -191,7 +191,7 @@
   padding: 15px;
   border: 1px solid #e0dcd9;
   border-radius: 10px;
-  background: #faf9f8;
+  background: #ffffff;
   font-size: 1rem;
   font-family: inherit;
   color: var(--hww-dark);
@@ -407,7 +407,7 @@
 }
 
 .location-card {
-  background: #faf9f8;
+  background: #ffffff;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.03);
@@ -513,7 +513,7 @@
 /* FAQ & Support Section */
 .faq-support-section {
   padding: 80px 0;
-  background: #faf9f8;
+  background: #ffffff;
 }
 
 .faq-support-layout {

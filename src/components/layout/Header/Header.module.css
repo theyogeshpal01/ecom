@@ -186,7 +186,7 @@
 }
 
 .dropdownItemLink:hover {
-  background-color: #f4fdf7; /* Light beige/peach */
+  background-color: #ffffff; /* Light beige/peach */
   color: var(--color-brand-dark);
   border-left: 3px solid var(--color-brand-dark);
 }
@@ -339,7 +339,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    background-color: #faf9f6;
+    background-color: #ffffff;
   }
   
   .sidebarSubMenu.open {
