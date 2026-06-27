@@ -34,7 +34,7 @@ body {
   min-height: 100vh;
 }
 
-/* ── Scroll Animations ── */
+/* â”€â”€ Scroll Animations â”€â”€ */
 .fadeUp {
   opacity: 0;
   transform: translateY(40px);

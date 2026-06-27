@@ -8,7 +8,7 @@ const catalogues = [
     icon: <BookOpen size={28} strokeWidth={1.5} />,
     tag: 'Full Range',
     title: 'Product Catalogue',
-    desc: 'Browse our complete collection of authentic handcrafted Indian categories — from home décor to gifting essentials.',
+    desc: 'Browse our complete collection of authentic handcrafted Indian categories — from home dÃ©cor to gifting essentials.',
     highlights: ['200+ Unique categories', 'HD Product Images', 'Pricing & MOQ Details'],
   },
   {

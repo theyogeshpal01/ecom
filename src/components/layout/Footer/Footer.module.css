@@ -204,7 +204,7 @@
 }
 
 .currencyLang span::after {
-  content: ' ▾';
+  content: ' â–¾';
   font-size: 0.7rem;
 }
 

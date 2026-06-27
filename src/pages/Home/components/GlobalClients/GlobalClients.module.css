@@ -11,7 +11,7 @@
   gap: 3.5rem;
 }
 
-/* ── Top Row ── */
+/* â”€â”€ Top Row â”€â”€ */
 .topRow {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -91,7 +91,7 @@
   letter-spacing: 0.4px;
 }
 
-/* ── Countries Strip ── */
+/* â”€â”€ Countries Strip â”€â”€ */
 .countriesBlock {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
@@ -136,7 +136,7 @@
   color: #ffffff;
 }
 
-/* ── Bottom Row ── */
+/* â”€â”€ Bottom Row â”€â”€ */
 .bottomRow {
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
@@ -201,7 +201,7 @@
   margin-top: 3px;
 }
 
-/* ── Responsive ── */
+/* â”€â”€ Responsive â”€â”€ */
 @media (max-width: 900px) {
   .topRow {
     grid-template-columns: 1fr;

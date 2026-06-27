@@ -127,7 +127,7 @@ const Footer = () => {
             <span>English</span>
           </div>
           <p className={styles.copyrightText}>
-            © 2026, HIEIL - Connecting People Through Commerce
+            Â© 2026, HIEIL - Connecting People Through Commerce
           </p>
           <div className={styles.paymentIcons}>
             <div className={styles.payIcon} aria-label="Visa">
