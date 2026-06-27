@@ -3,9 +3,12 @@ import { Link, useParams } from 'react-router-dom';
 import { ChevronDown, ChevronUp, Grid, List, Star } from 'lucide-react';
 import styles from './Shop.module.css';
 
-import { products } from '../../data/products';
+const categories = [
+  { id: 1, name: 'Sample Item 1', brand: 'Handcrafted Blue Pottery', rating: 5, image: '/placeholder.jpg' },
+  { id: 2, name: 'Sample Item 2', brand: 'Handcrafted Wooden categories', rating: 4, image: '/placeholder.jpg' }
+];
 
-// Mock filters matching Image 1 Categories
+// Mock filters matching Image 1 categories
 const FILTERS = [
   {
     id: 'availability',
@@ -14,13 +17,13 @@ const FILTERS = [
   },
   {
     id: 'categories',
-    title: 'CATEGORIES',
+    title: 'categories',
     options: [
-      'All Products',
+      'All categories',
       'Handcrafted Blue Pottery',
-      'Handcrafted Metal Products',
-      'Handcrafted Stone Products',
-      'Handcrafted Wooden Products',
+      'Handcrafted Metal categories',
+      'Handcrafted Stone categories',
+      'Handcrafted Wooden categories',
       'Luxury clock'
     ]
   },
@@ -61,9 +64,9 @@ const COLORS = [
 
 const categoryMap = {
   'blue-pottery': 'Handcrafted Blue Pottery',
-  'metal': 'Handcrafted Metal Products',
-  'stone': 'Handcrafted Stone Products',
-  'wooden': 'Handcrafted Wooden Products',
+  'metal': 'Handcrafted Metal categories',
+  'stone': 'Handcrafted Stone categories',
+  'wooden': 'Handcrafted Wooden categories',
   'clock': 'Luxury clock'
 };
 
@@ -71,7 +74,7 @@ const Shop = () => {
   const { categoryId } = useParams();
   
   // Determine initial category from URL
-  const initialCategory = categoryId ? categoryMap[categoryId] || 'All Products' : 'All Products';
+  const initialCategory = categoryId ? categoryMap[categoryId] || 'All categories' : 'All categories';
 
   const [openSections, setOpenSections] = useState({
     availability: true,
@@ -112,7 +115,7 @@ const Shop = () => {
 
   const handleClearAll = () => {
     setSelectedFilters({
-      categories: ['All Products'],
+      categories: ['All categories'],
       material: [],
       artisan: [],
       availability: [],
@@ -124,10 +127,10 @@ const Shop = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Filter products based on selected states
-  const filteredProducts = products.filter(product => {
+  // Filter categories based on selected states
+  const filteredcategories = categories.filter(product => {
     // Category Filter (Maps to product.brand in the mock data)
-    if (selectedFilters.categories.length > 0 && !selectedFilters.categories.includes('All Products')) {
+    if (selectedFilters.categories.length > 0 && !selectedFilters.categories.includes('All categories')) {
       if (!selectedFilters.categories.includes(product.brand)) return false;
     }
 
@@ -156,7 +159,7 @@ const Shop = () => {
       <div className={styles.pageHeader}>
         <h1 className={styles.pageTitle}>{initialCategory.toUpperCase()}</h1>
         <div className={styles.breadcrumbs}>
-          <Link to="/">Home</Link> &gt; Products {initialCategory !== 'All Products' && `> ${initialCategory}`}
+          <Link to="/">Home</Link> &gt; categories {initialCategory !== 'All categories' && `> ${initialCategory}`}
         </div>
       </div>
 
@@ -223,7 +226,7 @@ const Shop = () => {
         <div className={styles.contentArea}>
           <div className={styles.topBar}>
             <div className={styles.resultsCount}>
-              Showing {filteredProducts.length} results
+              Showing {filteredcategories.length} results
             </div>
             
             <div className={styles.sortControls}>
@@ -236,7 +239,7 @@ const Shop = () => {
                   <option value="new">Date, new to old</option>
                 </select>
               </div>
-              <div className={styles.productCount}>{filteredProducts.length} Products</div>
+              <div className={styles.productCount}>{filteredcategories.length} categories</div>
               <div className={styles.viewIcons}>
                 <Grid size={18} className={`${styles.viewIcon} ${styles.active}`} />
                 <List size={18} className={styles.viewIcon} />
@@ -245,10 +248,10 @@ const Shop = () => {
           </div>
 
           <div className={styles.productGrid}>
-            {filteredProducts.length === 0 ? (
-              <div style={{ padding: '2rem 0', color: '#666' }}>No products found matching your filters.</div>
+            {filteredcategories.length === 0 ? (
+              <div style={{ padding: '2rem 0', color: '#666' }}>No categories found matching your filters.</div>
             ) : (
-              filteredProducts.map((product) => (
+              filteredcategories.map((product) => (
                 <div key={product.id} className={styles.productCard}>
                 <div className={styles.imageBox}>
                   {/* Mocking the badge logic from Image 3 */}

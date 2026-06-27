@@ -17,11 +17,11 @@ const FilterBar = () => {
           <div className={styles.inputGroup}>
             <label className={styles.label}>Product Category</label>
             <select className={styles.select}>
-              <option>All Categories</option>
+              <option>All categories</option>
               <option>Blue Pottery</option>
-              <option>Metal Products</option>
-              <option>Stone Products</option>
-              <option>Wooden Products</option>
+              <option>Metal categories</option>
+              <option>Stone categories</option>
+              <option>Wooden categories</option>
               <option>Luxury Clock</option>
             </select>
           </div>

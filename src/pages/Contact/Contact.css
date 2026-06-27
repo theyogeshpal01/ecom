@@ -247,20 +247,21 @@
 
 .btn-submit {
   background: var(--hww-primary);
-  color: white;
+  color: #000000;
   border: none;
   padding: 16px 30px;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 1rem;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  transition: var(--hww-transition);
-  margin-top: 10px;
-  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  width: 100%;
+  border-radius: 6px;
 }
 
 .btn-submit:hover {

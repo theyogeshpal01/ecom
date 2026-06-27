@@ -9,11 +9,11 @@ const CustomProductDevelopment = () => {
   }, []);
 
   const advantages = [
-    { title: 'Market Uniqueness', icon: <Star size={24} />, desc: 'Get products that are unique to your market and help you stand out from competitors with exclusive designs.' },
+    { title: 'Market Uniqueness', icon: <Star size={24} />, desc: 'Get categories that are unique to your market and help you stand out from competitors with exclusive designs.' },
     { title: 'Brand Alignment', icon: <Target size={24} />, desc: 'Every product perfectly matches your brand identity, values, and target audience preferences.' },
-    { title: 'International Standards', icon: <Globe size={24} />, desc: 'Products designed to meet international quality standards and market-specific regulations.' },
+    { title: 'International Standards', icon: <Globe size={24} />, desc: 'categories designed to meet international quality standards and market-specific regulations.' },
     { title: 'Exclusive Collections', icon: <ShieldCheck size={24} />, desc: 'Create proprietary product lines that can\'t be replicated by competitors, giving you market exclusivity.' },
-    { title: 'Timely Delivery', icon: <Clock size={24} />, desc: 'Efficient production timelines that ensure your products reach the market when you need them.' },
+    { title: 'Timely Delivery', icon: <Clock size={24} />, desc: 'Efficient production timelines that ensure your categories reach the market when you need them.' },
     { title: 'Ongoing Support', icon: <HeartHandshake size={24} />, desc: 'Continuous consultation and support throughout the development process and beyond launch.' },
     { title: '100% Transparency', icon: <Search size={24} />, desc: 'Complete visibility into development costs, material sourcing, and production timelines.' },
     { title: 'No Corruption Policy', icon: <Scale size={24} />, desc: 'Zero-tolerance for unethical practices, ensuring fair and honest product development cycles.' }
@@ -23,7 +23,7 @@ const CustomProductDevelopment = () => {
     { num: '1', title: 'Consultation', desc: 'Understanding your market needs, brand identity, and specific requirements through detailed discussions.' },
     { num: '2', title: 'Concept Design', desc: 'Creating initial designs and prototypes that align with your vision and market trends.' },
     { num: '3', title: 'Refinement', desc: 'Iterating on designs based on your feedback to ensure perfect alignment with expectations.' },
-    { num: '4', title: 'Production', desc: 'Manufacturing your custom products using premium materials and expert craftsmanship.' }
+    { num: '4', title: 'Production', desc: 'Manufacturing your custom categories using premium materials and expert craftsmanship.' }
   ];
 
   const partners = [
@@ -41,7 +41,7 @@ const CustomProductDevelopment = () => {
           <span className="cs-tag">Custom Product Development</span>
           <h1 className="cs-title">Creating Unique Solutions for Every Market</h1>
           <p className="cs-subtitle">
-            Every market has unique demands. That's why we offer specialized custom product development services designed to meet your specific business needs. From concept to completion, we work closely with you to create products that perfectly align with your brand identity and market requirements.
+            Every market has unique demands. That's why we offer specialized custom product development services designed to meet your specific business needs. From concept to completion, we work closely with you to create categories that perfectly align with your brand identity and market requirements.
           </p>
         </div>
       </section>
@@ -94,16 +94,16 @@ const CustomProductDevelopment = () => {
         </div>
       </section>
 
-      {/* Product Categories */}
+      {/* Product categories */}
       <section className="cs-categories-section">
         <div className="container" data-aos="fade-up">
           <div className="section-header">
-            <h2>Product Categories</h2>
-            <p>Custom Development Across Multiple Categories</p>
+            <h2>Product categories</h2>
+            <p>Custom Development Across Multiple categories</p>
           </div>
           <div className="empty-state">
             <Search size={48} className="empty-icon" />
-            <p>No custom products found at the moment.</p>
+            <p>No custom categories found at the moment.</p>
           </div>
         </div>
       </section>
@@ -113,7 +113,7 @@ const CustomProductDevelopment = () => {
         <div className="container">
           <div className="section-header" data-aos="fade-up">
             <h2>Our Development Process</h2>
-            <p>From Concept to Market-Ready Products</p>
+            <p>From Concept to Market-Ready categories</p>
           </div>
           <div className="process-steps-container">
             {processSteps.map((step, index) => (
@@ -133,7 +133,7 @@ const CustomProductDevelopment = () => {
       <section className="cs-cta-section" data-aos="zoom-in">
         <div className="cs-cta-inner">
           <h2>Ready To Develop Your Unique Product Line?</h2>
-          <p>Let's collaborate to create products that set your brand apart in the marketplace. Our expert team is ready to bring your vision to life with custom solutions tailored to your specific needs.</p>
+          <p>Let's collaborate to create categories that set your brand apart in the marketplace. Our expert team is ready to bring your vision to life with custom solutions tailored to your specific needs.</p>
           <Link to="/contact" className="cs-btn">Start Your Custom Project</Link>
         </div>
       </section>

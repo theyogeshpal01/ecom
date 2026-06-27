@@ -35,7 +35,7 @@ const Footer = () => {
               <div className={styles.infoRow}>
                 <MapPin size={16} className={styles.infoIcon} />
                 <p>
-                  Since 2024, HIEIL has been redefining shopping with premium products.
+                  Since 2024, HIEIL has been redefining shopping with premium categories.
                   <br /><br />
                   Every item is designed to add style, comfort, and innovation.
                 </p>
@@ -71,7 +71,7 @@ const Footer = () => {
               {FOOTER_LINKS.explore.map((link) => (
                 <li key={link.label}><a href={link.href}>{link.label}</a></li>
               ))}
-              {FOOTER_LINKS.products.slice(0, 2).map((link) => (
+              {FOOTER_LINKS.categories.slice(0, 2).map((link) => (
                 <li key={link.label}><a href={link.href}>{link.label}</a></li>
               ))}
             </ul>

@@ -4,8 +4,8 @@ import styles from './Product.module.css';
 import ProductGallery from './components/ProductGallery/ProductGallery';
 import ProductInfo from './components/ProductInfo/ProductInfo';
 import ProductDetailsTab from './components/ProductDetailsTab/ProductDetailsTab';
-import RelatedProducts from './components/RelatedProducts/RelatedProducts';
-import { products } from '../../data/products';
+import Relatedcategories from './components/Relatedcategories/Relatedcategories';
+import { categories } from '../../data/categories';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const Product = () => {
@@ -19,7 +19,7 @@ const Product = () => {
   }, [id]);
 
   // Find product, fallback to the first product if not found just to ensure something renders
-  const product = products.find(p => p.id === parseInt(id)) || products[0];
+  const product = categories.find(p => p.id === parseInt(id)) || categories[0];
 
   if (!product) {
     return <div style={{ padding: '100px', textAlign: 'center' }}>Product not found</div>;
@@ -53,8 +53,8 @@ const Product = () => {
       {/* Bottom Section: Tabs, Description, Banner */}
       <ProductDetailsTab product={product} />
 
-      {/* Related Products Carousel */}
-      <RelatedProducts />
+      {/* Related categories Carousel */}
+      <Relatedcategories />
 
     </main>
   );

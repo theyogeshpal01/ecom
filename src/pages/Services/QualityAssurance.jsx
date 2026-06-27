@@ -35,12 +35,12 @@ const QualityAssurance = () => {
   const standards = [
     { title: 'Material Inspection', icon: <Search size={40} />, desc: 'Thorough inspection of raw materials before production begins to ensure they meet our premium standards.' },
     { title: 'In-Process Control', icon: <Settings size={40} />, desc: 'Continuous monitoring during the manufacturing process to identify and correct any deviations immediately.' },
-    { title: 'Final Inspection', icon: <Eye size={40} />, desc: 'Comprehensive final review of the finished products against approved samples and specifications.' },
+    { title: 'Final Inspection', icon: <Eye size={40} />, desc: 'Comprehensive final review of the finished categories against approved samples and specifications.' },
     { title: 'Packaging Check', icon: <Box size={40} />, desc: 'Verification of packaging materials and methods to ensure safe transit across global destinations.' }
   ];
 
   const qualityChecks = [
-    { title: 'Dimensional Accuracy', desc: 'Precise measurement checks to ensure products match required specifications and tolerances.', icon: <Scale size={32} /> },
+    { title: 'Dimensional Accuracy', desc: 'Precise measurement checks to ensure categories match required specifications and tolerances.', icon: <Scale size={32} /> },
     { title: 'Finish & Texture', desc: 'Detailed visual and tactile inspection of surfaces, coatings, and finishes.', icon: <CheckCircle size={32} /> },
     { title: 'Durability Testing', desc: 'Stress and load testing relevant to the product category to guarantee longevity.', icon: <ShieldCheck size={32} /> },
     { title: 'Aesthetic Review', desc: 'Assessment of color consistency, patterns, and overall visual appeal.', icon: <Target size={32} /> },
@@ -69,7 +69,7 @@ const QualityAssurance = () => {
   const partners = [
     { title: 'Uncompromising Standards', desc: 'We never cut corners. Our commitment to quality is the foundation of our reputation.', icon: <Award size={32} /> },
     { title: 'Risk Mitigation', desc: 'Thorough quality control minimizes the risk of returns, complaints, and brand damage.', icon: <ShieldCheck size={32} /> },
-    { title: 'Brand Protection', desc: 'Delivering consistently high-quality products helps protect and elevate your brand image.', icon: <CheckCircle size={32} /> },
+    { title: 'Brand Protection', desc: 'Delivering consistently high-quality categories helps protect and elevate your brand image.', icon: <CheckCircle size={32} /> },
     { title: 'Long-term Reliability', desc: 'Our dependable quality assurance processes make us a trusted long-term partner.', icon: <HeartHandshake size={32} /> }
   ];
 
@@ -186,7 +186,7 @@ const QualityAssurance = () => {
       <section className="qa-cta-section" data-aos="zoom-in">
         <div className="qa-cta-inner">
           <h2>Experience Premium Quality</h2>
-          <p>Partner with us and experience the peace of mind that comes with reliable, top-tier quality assurance. We protect your brand reputation by delivering products that speak of excellence.</p>
+          <p>Partner with us and experience the peace of mind that comes with reliable, top-tier quality assurance. We protect your brand reputation by delivering categories that speak of excellence.</p>
           <Link to="/contact" className="qa-btn">Discuss Your Requirements</Link>
         </div>
       </section>

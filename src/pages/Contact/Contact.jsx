@@ -35,7 +35,7 @@ const Contact = () => {
           <span className="contact-tag">Contact Us</span>
           <h1 className="contact-title">Get In Touch With Us</h1>
           <p className="contact-subtitle">
-            We'd love to hear from you! Whether you have questions about our products, need assistance with your order, want to discuss a custom project, or just want to learn more about our handicrafts, our team is here to help. Reach out to us through any of the following methods.
+            We'd love to hear from you! Whether you have questions about our categories, need assistance with your order, want to discuss a custom project, or just want to learn more about our handicrafts, our team is here to help. Reach out to us through any of the following methods.
           </p>
         </div>
       </section>

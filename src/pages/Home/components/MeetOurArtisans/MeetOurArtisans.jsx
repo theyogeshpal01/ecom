@@ -6,10 +6,10 @@ import useScrollAnimation from '../../../../hooks/useScrollAnimation';
 const artisans = [
   {
     id: 1,
-    category: 'Handcrafted Wooden Products',
+    category: 'Handcrafted Wooden categories',
     name: 'Surajmal & team',
     image: '/artisan1.png',
-    desc1: 'Surajmal is a skilled artisan known for his expertise in crafting high-quality handcrafted wooden products. With years of experience in traditional woodworking, he combines time-honored techniques with creative design to produce unique and elegant wooden handicrafts.',
+    desc1: 'Surajmal is a skilled artisan known for his expertise in crafting high-quality handcrafted wooden categories. With years of experience in traditional woodworking, he combines time-honored techniques with creative design to produce unique and elegant wooden handicrafts.',
     desc2: 'His craftsmanship reflects patience, precision, and a deep respect for natural materials. Each wooden piece created by Surajmal is carefully shaped, carved, and finished by hand, ensuring durability, beauty, and authenticity. His work often features traditional patterns and artistic detailing that represent the rich heritage of Indian handicrafts.'
   },
   {

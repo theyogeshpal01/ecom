@@ -6,23 +6,23 @@ const Gallery = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [activeCategory, setActiveCategory] = useState('All Products');
+  const [activeCategory, setActiveCategory] = useState('All categories');
 
   const categories = [
-    'All Products',
+    'All categories',
     'HANDCRAFTED BLUE POTTERY',
     'HANDCRAFTED LUXURY CLOCK',
-    'HANDCRAFTED MATEL PRODUCTS',
+    'HANDCRAFTED MATEL categories',
     'HANDCRAFTED RUG AND CARPET',
-    'HANDCRAFTED STONE PRODUCTS',
-    'HANDCRAFTED WOODEN PRODUCTS',
+    'HANDCRAFTED STONE categories',
+    'HANDCRAFTED WOODEN categories',
     'HANDMADE PAINTING ART'
   ];
 
   // A representative sample of the 400+ items provided by the user
   const allItems = [
-    { title: 'Chopping Board', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Serving Tray', category: 'HANDCRAFTED WOODEN PRODUCTS' },
+    { title: 'Chopping Board', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Serving Tray', category: 'HANDCRAFTED WOODEN categories' },
     { title: 'Lamp', category: 'HANDCRAFTED BLUE POTTERY' },
     { title: 'Jar', category: 'HANDCRAFTED BLUE POTTERY' },
     { title: 'Decorative', category: 'HANDCRAFTED BLUE POTTERY' },
@@ -30,48 +30,48 @@ const Gallery = () => {
     { title: 'Candle Holder', category: 'HANDCRAFTED BLUE POTTERY' },
     { title: 'Soap Dispenser', category: 'HANDCRAFTED BLUE POTTERY' },
     { title: 'Vase', category: 'HANDCRAFTED BLUE POTTERY' },
-    { title: 'Serving Bowl', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Planter Plate', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Basket', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Cutlery Holder', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Box', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Bowl', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Fruit Basket', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Egg Tray', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Jar Holder', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Tissue Holder', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Planter Pot', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Book Stand', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Decor', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Serving Plate', category: 'HANDCRAFTED WOODEN PRODUCTS' },
-    { title: 'Coaster', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Basket', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Serving Tray', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Planter Pot', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Bowl', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Rolling Board', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Bathroom Organiser', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Decor', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Decor Tray', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Kitchen Set', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Cutlery Holder', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Chopping Board', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Plate', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Jar', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Pestle', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Pen Stand', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Tissue Holder', category: 'HANDCRAFTED STONE PRODUCTS' },
-    { title: 'Cake Stand', category: 'HANDCRAFTED STONE PRODUCTS' },
+    { title: 'Serving Bowl', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Planter Plate', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Basket', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Cutlery Holder', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Box', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Bowl', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Fruit Basket', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Egg Tray', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Jar Holder', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Tissue Holder', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Planter Pot', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Book Stand', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Decor', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Serving Plate', category: 'HANDCRAFTED WOODEN categories' },
+    { title: 'Coaster', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Basket', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Serving Tray', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Planter Pot', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Bowl', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Rolling Board', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Bathroom Organiser', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Decor', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Decor Tray', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Kitchen Set', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Cutlery Holder', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Chopping Board', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Plate', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Jar', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Pestle', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Pen Stand', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Tissue Holder', category: 'HANDCRAFTED STONE categories' },
+    { title: 'Cake Stand', category: 'HANDCRAFTED STONE categories' },
     { title: 'Wall Clock', category: 'HANDCRAFTED LUXURY CLOCK' },
     { title: 'Hanging Clock', category: 'HANDCRAFTED LUXURY CLOCK' },
-    { title: 'Wall Decor', category: 'HANDCRAFTED MATEL PRODUCTS' },
-    { title: 'Key Hanging', category: 'HANDCRAFTED MATEL PRODUCTS' },
-    { title: 'Decor', category: 'HANDCRAFTED MATEL PRODUCTS' },
-    { title: 'Wall Clock', category: 'HANDCRAFTED MATEL PRODUCTS' },
-    { title: 'Table Clock', category: 'HANDCRAFTED MATEL PRODUCTS' },
-    { title: 'Candle Holder', category: 'HANDCRAFTED MATEL PRODUCTS' },
-    { title: 'Pen Stand', category: 'HANDCRAFTED MATEL PRODUCTS' },
-    { title: 'Metal Bag', category: 'HANDCRAFTED MATEL PRODUCTS' },
+    { title: 'Wall Decor', category: 'HANDCRAFTED MATEL categories' },
+    { title: 'Key Hanging', category: 'HANDCRAFTED MATEL categories' },
+    { title: 'Decor', category: 'HANDCRAFTED MATEL categories' },
+    { title: 'Wall Clock', category: 'HANDCRAFTED MATEL categories' },
+    { title: 'Table Clock', category: 'HANDCRAFTED MATEL categories' },
+    { title: 'Candle Holder', category: 'HANDCRAFTED MATEL categories' },
+    { title: 'Pen Stand', category: 'HANDCRAFTED MATEL categories' },
+    { title: 'Metal Bag', category: 'HANDCRAFTED MATEL categories' },
     { title: 'Plate', category: 'HANDCRAFTED BLUE POTTERY' },
     { title: 'Wash Basin', category: 'HANDCRAFTED BLUE POTTERY' },
     { title: 'Table Lamp', category: 'HANDCRAFTED BLUE POTTERY' },
@@ -87,7 +87,7 @@ const Gallery = () => {
     ...item
   }));
 
-  const filteredItems = activeCategory === 'All Products' 
+  const filteredItems = activeCategory === 'All categories' 
     ? galleryItems 
     : galleryItems.filter(item => item.category === activeCategory);
 
@@ -153,7 +153,7 @@ const Gallery = () => {
           <div className="section-header text-center">
             <h2>User Shared Moments</h2>
             <p className="subtitle">Real Stories Shared by Our Global Community</p>
-            <p className="desc">Explore the beautiful spaces our customers have created using HIEIL handicrafts. See how our products blend into diverse lifestyles and professional settings.</p>
+            <p className="desc">Explore the beautiful spaces our customers have created using HIEIL handicrafts. See how our categories blend into diverse lifestyles and professional settings.</p>
           </div>
 
           <div className="shared-moments-empty">

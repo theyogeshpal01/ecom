@@ -5,7 +5,7 @@ import useScrollAnimation from '../../../../hooks/useScrollAnimation';
 
 const faqs = [
   { id: 1, question: 'Company Overview', answer: 'We are a leading exporter of authentic Indian handicrafts, dedicated to preserving traditional artistry while meeting global quality standards.' },
-  { id: 2, question: 'What Products Do We Export?', answer: 'We export a wide range of handcrafted items including wooden products, blue pottery, textiles, metal art, and home decor pieces.' },
+  { id: 2, question: 'What categories Do We Export?', answer: 'We export a wide range of handcrafted items including wooden categories, blue pottery, textiles, metal art, and home decor pieces.' },
   { id: 3, question: 'Where Are We Located?', answer: 'Our headquarters is based in India, with an extensive network of artisan clusters across various states to source the finest crafts.' },
   { id: 4, question: 'How To Place An Order?', answer: 'You can place an order by contacting our sales team via email or phone, or by submitting an inquiry through our website contact form.' },
   { id: 5, question: 'Shipping And Delivery', answer: 'We offer fast and reliable shipping worldwide. Delivery times depend on the destination and the size of the order.' },
@@ -28,7 +28,7 @@ const FAQ = () => {
       <div className={styles.container}>
         <div className={styles.header} ref={headerRef} style={{opacity:0,transform:'translateY(30px)',transition:'opacity 0.7s ease,transform 0.7s ease'}}>
           <h2 className={styles.title}>FREQUENTLY ASKED QUESTIONS</h2>
-          <p className={styles.subtitle}>Find answers to common questions about our products and services</p>
+          <p className={styles.subtitle}>Find answers to common questions about our categories and services</p>
         </div>
 
         <div className={styles.categoryTab}>

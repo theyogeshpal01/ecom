@@ -10,7 +10,7 @@ const BulkWholesaleSupply = () => {
 
   const stats = [
     { value: '50+', label: 'Wholesale Partners' },
-    { value: '1M+', label: 'Products Delivered' },
+    { value: '1M+', label: 'categories Delivered' },
     { value: '7+', label: 'Years Experience' },
     { value: '50+', label: 'Countries Served' }
   ];
@@ -34,7 +34,7 @@ const BulkWholesaleSupply = () => {
   ];
 
   const partners = [
-    { title: 'Proven Track Record', desc: '7+ years of experience in wholesale supply with hundreds of satisfied business partners worldwide.', icon: <Award size={32} /> },
+    { title: 'Proven Track Record', desc: '2+ years of experience in wholesale supply with hundreds of satisfied business partners worldwide.', icon: <Award size={32} /> },
     { title: 'Scalable Production', desc: 'Manufacturing capabilities to handle orders from hundreds to hundreds of thousands of units.', icon: <TrendingUp size={32} /> },
     { title: 'Quality Assurance', desc: 'Stringent quality control processes ensure every product meets international standards and your expectations.', icon: <ShieldCheck size={32} /> },
     { title: 'Partnership Focus', desc: 'We invest in long-term relationships, providing support and flexibility to help your business grow.', icon: <HeartHandshake size={32} /> }
@@ -78,7 +78,7 @@ const BulkWholesaleSupply = () => {
             <div className="offer-card" data-aos="fade-up" data-aos-delay="100">
               <div className="offer-icon"><TrendingUp size={40} /></div>
               <h3>Large-scale Production</h3>
-              <p>Experienced in handling bulk orders of any size while maintaining consistent quality across all products.</p>
+              <p>Experienced in handling bulk orders of any size while maintaining consistent quality across all categories.</p>
             </div>
             <div className="offer-card" data-aos="fade-up" data-aos-delay="200">
               <div className="offer-icon"><Box size={40} /></div>
@@ -99,11 +99,11 @@ const BulkWholesaleSupply = () => {
         </div>
       </section>
 
-      {/* Product Categories */}
+      {/* Product categories */}
       <section className="ws-categories-section">
         <div className="container">
           <div className="section-header" data-aos="fade-up">
-            <h2>Wholesale Product Categories</h2>
+            <h2>Wholesale Product categories</h2>
             <p>Extensive Range for All Your Business Needs</p>
           </div>
           <div className="categories-grid">
@@ -114,7 +114,7 @@ const BulkWholesaleSupply = () => {
                 <span className="moq-badge">MOQ: 100 pcs</span>
               </div>
               <div className="category-content">
-                <h3>Handcrafted Blue Pottery Products</h3>
+                <h3>Handcrafted Blue Pottery categories</h3>
                 <p>Handcrafted Blue Pottery is a traditional art form known for its vibrant blue and turquoise designs. Crafted by skilled artisans using a unique blend of quartz, glass, and natural materials, these pieces include plates, bowls, tiles, and decorative items, reflecting rich heritage, fine craftsmanship, and timeless artistic beauty.</p>
                 <Link to="/contact" className="cat-btn">Request Catalog</Link>
               </div>
@@ -123,12 +123,12 @@ const BulkWholesaleSupply = () => {
             {/* Category 2 */}
             <div className="category-card" data-aos="fade-up">
               <div className="category-image">
-                <img src="/carousel4.png" alt="Handcrafted Metal Products" />
+                <img src="/carousel4.png" alt="Handcrafted Metal categories" />
                 <span className="moq-badge">MOQ: 100 pcs</span>
               </div>
               <div className="category-content">
-                <h3>Handcrafted Metal Products</h3>
-                <p>Handcrafted metal products are skillfully created by experienced artisans using high-quality metals such as brass, copper, iron, and aluminum. These items include decorative pieces, sculptures, utensils, and home décor accessories. Each product reflects traditional craftsmanship, durability, and artistic elegance.</p>
+                <h3>Handcrafted Metal categories</h3>
+                <p>Handcrafted metal categories are skillfully created by experienced artisans using high-quality metals such as brass, copper, iron, and aluminum. These items include decorative pieces, sculptures, utensils, and home décor accessories. Each product reflects traditional craftsmanship, durability, and artistic elegance.</p>
                 <Link to="/contact" className="cat-btn">Request Catalog</Link>
               </div>
             </div>
@@ -136,12 +136,12 @@ const BulkWholesaleSupply = () => {
             {/* Category 3 */}
             <div className="category-card" data-aos="fade-up">
               <div className="category-image">
-                <img src="/carousel2.png" alt="Handcrafted Stone Products" />
+                <img src="/carousel2.png" alt="Handcrafted Stone categories" />
                 <span className="moq-badge">MOQ: 100 pcs</span>
               </div>
               <div className="category-content">
-                <h3>Handcrafted Stone Products</h3>
-                <p>Handcrafted stone products are beautifully carved by skilled artisans using natural stones such as marble, sandstone, and granite. These items include sculptures, tabletops, decorative pieces, and architectural elements. Each product reflects traditional craftsmanship, durability, and timeless elegance.</p>
+                <h3>Handcrafted Stone categories</h3>
+                <p>Handcrafted stone categories are beautifully carved by skilled artisans using natural stones such as marble, sandstone, and granite. These items include sculptures, tabletops, decorative pieces, and architectural elements. Each product reflects traditional craftsmanship, durability, and timeless elegance.</p>
                 <Link to="/contact" className="cat-btn">Request Catalog</Link>
               </div>
             </div>
@@ -149,12 +149,12 @@ const BulkWholesaleSupply = () => {
             {/* Category 4 */}
             <div className="category-card" data-aos="fade-up">
               <div className="category-image">
-                <img src="/carousel1.png" alt="Handcrafted Wooden Products" />
+                <img src="/carousel1.png" alt="Handcrafted Wooden categories" />
                 <span className="moq-badge">MOQ: 100 pcs</span>
               </div>
               <div className="category-content">
-                <h3>Handcrafted Wooden Products</h3>
-                <p>Handcrafted wooden products are carefully created by skilled artisans using high-quality natural wood. These products include decorative items, furniture, kitchenware, and home décor pieces. Each item reflects fine craftsmanship, traditional techniques, and natural beauty.</p>
+                <h3>Handcrafted Wooden categories</h3>
+                <p>Handcrafted wooden categories are carefully created by skilled artisans using high-quality natural wood. These categories include decorative items, furniture, kitchenware, and home décor pieces. Each item reflects fine craftsmanship, traditional techniques, and natural beauty.</p>
                 <Link to="/contact" className="cat-btn">Request Catalog</Link>
               </div>
             </div>
@@ -171,12 +171,12 @@ const BulkWholesaleSupply = () => {
               <p className="moq-subtitle">Tailored to Support Businesses of All Sizes</p>
               
               <div className="moq-highlight">
-                <span className="highlight-tag">All Products</span>
+                <span className="highlight-tag">All categories</span>
                 <h3>MOQ: 100 pieces</h3>
               </div>
 
               <div className="moq-details">
-                <p>To maintain premium quality standards and ensure cost-effective production, our handicraft products are available with a Minimum Order Quantity (MOQ) of 100 pieces per design.</p>
+                <p>To maintain premium quality standards and ensure cost-effective production, our handicraft categories are available with a Minimum Order Quantity (MOQ) of 100 pieces per design.</p>
                 <p>As each item is carefully handcrafted by skilled artisans, a 100-piece MOQ allows us to efficiently manage raw materials, production time, and quality control while offering competitive international pricing.</p>
                 <p>We are also open to customisation in design, size, finish, packaging, and branding for bulk orders meeting the MOQ requirement. Mixed designs can be discussed depending on product category and availability.</p>
                 <p>Our goal is to support global buyers with authentic Indian handicrafts while empowering local artisans through sustainable production practices.</p>

@@ -26,7 +26,7 @@ const Testimonials = () => {
           <span className="testimonials-tag">Testimonials</span>
           <h1 className="testimonials-title">What Our Customers Say</h1>
           <p className="testimonials-subtitle">
-            Discover why thousands of customers trust HIEIL for their handicraft needs. Read genuine testimonials from homeowners, interior designers, and businesses who have transformed their spaces with our premium handmade products and exceptional services.
+            Discover why thousands of customers trust HIEIL for their handicraft needs. Read genuine testimonials from homeowners, interior designers, and businesses who have transformed their spaces with our premium handmade categories and exceptional services.
           </p>
         </div>
       </section>
@@ -58,7 +58,7 @@ const Testimonials = () => {
               <Star size={24} fill="currentColor" />
             </div>
             <p className="testimonial-text">
-              "I recently purchased a beautiful handicraft from Hieil Company, and I am deeply impressed by the skill involved. In Japan, we deeply respect the 'Takumi' (artisan) spirit, and I see that same dedication in Hieil’s products. The balance of tradition and quality is excellent. It is a wonderful addition to my collection in Tokyo."
+              "I recently purchased a beautiful handicraft from Hieil Company, and I am deeply impressed by the skill involved. In Japan, we deeply respect the 'Takumi' (artisan) spirit, and I see that same dedication in Hieil’s categories. The balance of tradition and quality is excellent. It is a wonderful addition to my collection in Tokyo."
             </p>
             <div className="testimonial-author">
               <h4>Sakura</h4>
@@ -100,7 +100,7 @@ const Testimonials = () => {
             {/* CTA 2: Share Experience */}
             <div className="action-card secondary-action" data-aos="fade-left">
               <h2>Share Your Experience</h2>
-              <p>Loved our products and services? We'd love to hear about your experience! Share your story and help others discover the quality and craftsmanship of HIEIL handicrafts.</p>
+              <p>Loved our categories and services? We'd love to hear about your experience! Share your story and help others discover the quality and craftsmanship of HIEIL handicrafts.</p>
               <div className="action-buttons">
                 <button className="btn-outline"><PenTool size={18} /> Write a Review</button>
                 <button className="btn-outline"><Camera size={18} /> Share Photos</button>

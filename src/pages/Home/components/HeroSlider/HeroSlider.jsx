@@ -6,7 +6,7 @@ const slides = [
   {
     id: 1,
     eyebrow: 'Welcome to HIEIL (OPC) Pvt. Ltd.',
-    title: 'Handcrafted Products,\nInspired By India',
+    title: 'Handcrafted categories,\nInspired By India',
     image: '/carousel1.png',
   },
   {

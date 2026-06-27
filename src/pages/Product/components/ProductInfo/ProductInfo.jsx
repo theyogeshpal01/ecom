@@ -20,7 +20,7 @@ const defaultAccordionData = [
     title: 'Materials',
     icon: Shirt,
     content: (
-      <p>The item with the Committed label has a lower environmental impact because it was made with sustainable materials or methods. We are committed to creating items that combine sustainability with style. Made with recycled cashmere and industrial by-products.</p>
+      <p>The item with the Committed label has a lower environmental impact because it was made with sustainable materials or methods. We are committed to creating items that combine sustainability with style. Made with recycled cashmere and industrial by-categories.</p>
     )
   },
   {

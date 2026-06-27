@@ -46,7 +46,7 @@ const GlobalClients = () => {
             <span className={styles.eyebrow}>Our Global Presence</span>
             <h2 className={styles.title}>Trusted By Global<br />Clients & Partners</h2>
             <p className={styles.subtitle}>
-              Over 7+ years of excellence in exporting authentic Indian handicrafts — maintaining the highest standards of quality and reliability worldwide.
+              Over 2+ years of excellence in exporting authentic Indian handicrafts — maintaining the highest standards of quality and reliability worldwide.
             </p>
           </div>
 

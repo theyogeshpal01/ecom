@@ -11,7 +11,7 @@ const Blog = () => {
 
   const topics = [
     'All Posts',
-    'Handcrafted Wooden Products',
+    'Handcrafted Wooden categories',
     'Handmade Painting Art'
   ];
 
@@ -24,8 +24,8 @@ const Blog = () => {
   const artisans = [
     {
       name: 'Surajmal & team',
-      craft: 'Handcrafted Wooden Products',
-      desc: 'Surajmal is a skilled artisan known for his expertise in crafting high-quality handcrafted wooden products. With years of experience in traditional woodworking, he combines time-honored techniques with creative design to produce unique and elegant wooden handicrafts.\n\nHis craftsmanship reflects patience, precision, and a deep respect for natural materials. Each wooden piece created by Surajmal is carefully shaped, carved, and finished by hand, ensuring durability, beauty, and authenticity. His work often features traditional patterns and artistic detailing that represent the rich heritage of Indian handicrafts.',
+      craft: 'Handcrafted Wooden categories',
+      desc: 'Surajmal is a skilled artisan known for his expertise in crafting high-quality handcrafted wooden categories. With years of experience in traditional woodworking, he combines time-honored techniques with creative design to produce unique and elegant wooden handicrafts.\n\nHis craftsmanship reflects patience, precision, and a deep respect for natural materials. Each wooden piece created by Surajmal is carefully shaped, carved, and finished by hand, ensuring durability, beauty, and authenticity. His work often features traditional patterns and artistic detailing that represent the rich heritage of Indian handicrafts.',
       image: '/artisan1.png', 
     },
     {

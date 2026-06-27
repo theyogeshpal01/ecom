@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './RelatedProducts.module.css';
-import { products } from '../../../../data/products';
+import styles from './Relatedcategories.module.css';
+import { categories } from '../../../../data/categories';
 
-const RelatedProducts = () => {
-  // Use the first 4 products as related products for now
-  const relatedProducts = products.slice(0, 4);
+const Relatedcategories = () => {
+  // Use the first 4 categories as related categories for now
+  const relatedcategories = categories.slice(0, 4);
 
   return (
     <section className={styles.relatedSection}>
@@ -13,7 +13,7 @@ const RelatedProducts = () => {
         <h2 className={styles.sectionTitle}>YOU MAY ALSO LIKE</h2>
         
         <div className={styles.grid}>
-          {relatedProducts.map(product => (
+          {relatedcategories.map(product => (
             <div key={product.id} className={styles.card}>
               <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className={styles.imageContainer}>
@@ -51,4 +51,4 @@ const RelatedProducts = () => {
   );
 };
 
-export default RelatedProducts;
+export default Relatedcategories;

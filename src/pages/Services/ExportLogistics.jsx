@@ -33,15 +33,15 @@ const ExportLogistics = () => {
 
   const solutions = [
     { title: 'Export Documentation', icon: <FileText size={40} />, desc: 'We handle all export documentation including invoices, packing lists, certificates of origin, and export compliance paperwork.' },
-    { title: 'Quality Assurance', icon: <ShieldCheck size={40} />, desc: 'Rigorous quality control and inspection processes to ensure products meet international export standards.' },
-    { title: 'Export Packaging', icon: <Box size={40} />, desc: 'Professional export packaging solutions that ensure your products are ready for international shipping.' },
+    { title: 'Quality Assurance', icon: <ShieldCheck size={40} />, desc: 'Rigorous quality control and inspection processes to ensure categories meet international export standards.' },
+    { title: 'Export Packaging', icon: <Box size={40} />, desc: 'Professional export packaging solutions that ensure your categories are ready for international shipping.' },
     { title: 'Global Markets', icon: <Globe size={40} />, desc: 'Export to USA, Europe, Middle East, Asia, and more with our established international market presence.' }
   ];
 
   const documents = [
     { title: 'Commercial Invoice', desc: 'Detailed invoice specifying goods, values, and terms of sale for customs valuation.', icon: <FileText size={32} /> },
     { title: 'Packing List', desc: 'Comprehensive list detailing contents, weights, and dimensions of each package.', icon: <Box size={32} /> },
-    { title: 'Certificate Of Origin', desc: 'Official document certifying the country of manufacture for your products.', icon: <Globe size={32} /> },
+    { title: 'Certificate Of Origin', desc: 'Official document certifying the country of manufacture for your categories.', icon: <Globe size={32} /> },
     { title: 'Customs Clearance', desc: 'Complete handling of customs documentation and regulatory compliance.', icon: <ShieldCheck size={32} /> },
     { title: 'Bill Of Lading', desc: 'Shipping documents for sea freight and airway bills for air shipments.', icon: <Ship size={32} /> },
     { title: 'Insurance Certificate', desc: 'Cargo insurance documentation to protect your shipment during transit.', icon: <Briefcase size={32} /> }
@@ -67,13 +67,13 @@ const ExportLogistics = () => {
 
   const processSteps = [
     { num: '1', title: 'Order Confirmation', desc: 'Confirm your product requirements and export specifications for international market delivery.' },
-    { num: '2', title: 'Production & Quality', desc: 'Our artisans craft your products with export-quality standards and rigorous quality control.' },
+    { num: '2', title: 'Production & Quality', desc: 'Our artisans craft your categories with export-quality standards and rigorous quality control.' },
     { num: '3', title: 'Export Documentation', desc: 'We prepare all necessary export documents and ensure compliance with international regulations.' },
-    { num: '4', title: 'Ready For Export', desc: 'Products are packaged and ready for export with all documentation for international shipping.' }
+    { num: '4', title: 'Ready For Export', desc: 'categories are packaged and ready for export with all documentation for international shipping.' }
   ];
 
   const partners = [
-    { title: 'Experience', desc: '7+ years of expertise in international export and compliance procedures across global markets.', icon: <Clock size={32} /> },
+    { title: 'Experience', desc: '2+ years of expertise in international export and compliance procedures across global markets.', icon: <Clock size={32} /> },
     { title: 'Global Presence', desc: 'Established export relationships with buyers and distributors in 50+ countries worldwide.', icon: <Globe size={32} /> },
     { title: 'Quality Assurance', desc: 'Rigorous quality control and export standards compliance for international market requirements.', icon: <ShieldCheck size={32} /> },
     { title: 'Trusted Partner', desc: 'Reliable export services with transparent processes and dedicated support for international trade.', icon: <HeartHandshake size={32} /> }
@@ -87,7 +87,7 @@ const ExportLogistics = () => {
           <span className="ex-tag">Export & Global Logistics</span>
           <h1 className="ex-title">Professional Export Solutions</h1>
           <p className="ex-subtitle">
-            We specialize in exporting authentic Indian handicrafts to global markets. Our comprehensive export services ensure your products reach international destinations with proper documentation and quality assurance. Focus on your business while we handle the export complexities.
+            We specialize in exporting authentic Indian handicrafts to global markets. Our comprehensive export services ensure your categories reach international destinations with proper documentation and quality assurance. Focus on your business while we handle the export complexities.
           </p>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { products } from '../../data/products';
+import { categories } from '../../data/categories';
 import { ChevronRight, ArrowLeft } from 'lucide-react';
 import styles from './Enquiry.module.css';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
@@ -9,7 +9,7 @@ const Enquiry = () => {
   const { id } = useParams();
   
   // Find the product
-  const product = products.find(p => p.id === parseInt(id));
+  const product = categories.find(p => p.id === parseInt(id));
 
   const headerRef = useScrollAnimation();
   const formRef = useScrollAnimation();
@@ -41,7 +41,7 @@ const Enquiry = () => {
         <nav className={styles.breadcrumbs}>
           <Link to="/">Home</Link>
           <ChevronRight size={14} />
-          <span>Products</span>
+          <span>categories</span>
           <ChevronRight size={14} />
           <Link to={`/product/${product.id}`}>{product.name}</Link>
           <ChevronRight size={14} />

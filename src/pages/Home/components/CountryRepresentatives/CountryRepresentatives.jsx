@@ -15,7 +15,7 @@ const representatives = [
     id: 2,
     name: 'Mr. Harsh Vijay',
     title: 'Head of Design & Development',
-    desc: 'Mr. Harsh Vijay serves as the Head of Design & Development, bringing creativity, innovation, and a strong design vision to the organization. With a keen eye for detail and a deep understanding of traditional craftsmanship and modern design trends, he plays a vital role in shaping unique and market-ready product collections. In his role, Harsh Vijay leads the design and development process, working closely with artisans and production teams to transform creative concepts into high-quality handcrafted products. His focus is on blending traditional artistry with contemporary aesthetics to create designs that appeal to both domestic and international markets.',
+    desc: 'Mr. Harsh Vijay serves as the Head of Design & Development, bringing creativity, innovation, and a strong design vision to the organization. With a keen eye for detail and a deep understanding of traditional craftsmanship and modern design trends, he plays a vital role in shaping unique and market-ready product collections. In his role, Harsh Vijay leads the design and development process, working closely with artisans and production teams to transform creative concepts into high-quality handcrafted categories. His focus is on blending traditional artistry with contemporary aesthetics to create designs that appeal to both domestic and international markets.',
     image: '/harsh.png'
   },
   {
